@@ -1,9 +1,7 @@
-import { Box,  Grid, styled, Typography, useMediaQuery, useTheme } from "@mui/material";
-import React from "react";
-import { RevealUp } from "@/components/Reveal";
-import { BgImage, StyledTitle, StyledTitleContainer } from '@/components/Hero'
-import Link from "next/link";
-import Grid2 from "@mui/material/Unstable_Grid2";
+import { Box, Grid2, useMediaQuery } from "@mui/material";
+import { RevealUp } from "../components/Reveal";
+import { StyledTitle, StyledTitleContainer } from '../components/Hero'
+import { styled, useTheme } from "@mui/material/styles";
 
 const Logo = styled("img")(({ theme }) => ({
   maxWidth: '250px',
@@ -19,9 +17,6 @@ export default function HomePage() {
   console.log('matchDownMd', matchDownMd)
   
 
-  // const theme = useTheme();
-
-  // console.log('theme:', theme)
   return (
     <>
     

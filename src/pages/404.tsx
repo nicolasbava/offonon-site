@@ -1,4 +1,4 @@
-import PageContainer from "@/components/PageContainer";
+import PageContainer from "../components/PageContainer";
 import { Stack, Typography, styled } from "@mui/material";
 
 const StyledStack = styled(Stack)(({ theme })=> ({
