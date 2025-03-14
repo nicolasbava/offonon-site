@@ -14,7 +14,7 @@ export default function HomePage() {
   const theme = useTheme()
   const matchDownMd = useMediaQuery(theme.breakpoints.down("sm"));
 
-  console.log('matchDownMd', matchDownMd)
+  // console.log('matchDownMd', matchDownMd)
   
 
   return (
@@ -34,7 +34,7 @@ export default function HomePage() {
                   </StyledTitle>
                 </RevealUp>
               </Grid2>
-              <Grid2 size={{xs: 12, md: 6}} sx={{marginLeft: '40vw'}} >
+              <Grid2 size={{xs: 12, md: 6}}>
                 <Logo
                   src={"/offonon/offonon-logo2.png"}
                   height="auto"
