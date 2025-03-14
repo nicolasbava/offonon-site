@@ -1,0 +1,104 @@
+[{
+		"title": "Barbería",
+		"summary": "Conviértete en un maestro Barbero en solo 5 meses",
+		"description": [
+			"Aprenderás sobre manejo de herramientas, anatomía, cabello, cortes tradicionales y de barbería en tendencia, conceptos de estética y secretos de profesionales exitosos del rubro.",
+			"Tendrás acceso a perfeccionamientos exclusivos y una carta de recomendación al finalizar el curso.",
+			"🎖Obtendrás un certificado y la posibilidad de matricularte a nivel nacional."
+		],
+		"image": "https://firebasestorage.googleapis.com/v0/b/pierre-cursos.appspot.com/o/course1.png?alt=media&token=efe047a6-ece3-4a12-a0d6-f18d4b0861b6"
+	},
+	{
+		"title": "Bartender",
+		"summary": "Convierte en un Bartender profesional en solo 5 meses",
+		"description": ["Con este curso podrás:  Destacar y trabajar en Bares, Boliches, Eventos, Festivales, Casinos, Hoteles, Restaurantes e incluso emprender tu propio servicio de Barras", "¡Único Curso con Prácticas Profesionales en Barras de Jujuy!", "Tendrás acceso a perfeccionamientos exclusivos y una carta de recomendación al finalizar el  curso.", "🎖Obtendrás tu certificación al finalizar el curso!"],
+		"image": "https://firebasestorage.googleapis.com/v0/b/pierre-cursos.appspot.com/o/course1.png?alt=media&token=efe047a6-ece3-4a12-a0d6-f18d4b0861b6"
+	},
+	{
+		"title": "Manicura",
+		"summary": "Convierte En Manicurista profesional en solo 5 meses",
+		"description": ["Aprenderás desde cero y dominarás técnicas de: Esmaltado Semipermanente, Diseño y encapsulado,kapping, Esculpidas en gel, polygel,  acrílico, Softgel ¡y mucho más!", "🎖Obtendrás un certificado y la posibilidad de matricularte a nivel nacional."],
+		"image": "https://firebasestorage.googleapis.com/v0/b/pierre-cursos.appspot.com/o/course2.jpg?alt=media&token=b7611d8e-d078-4d66-b9cc-41038895e968"
+	},
+	{
+		"title": "Mirada perfecta",
+		"summary": "Convierte en una experta integral en cejas y pestañas en solo 2 meses",
+		"description": [
+			"Aprenderás técnicas innovadoras como extensiones de pestañas pelo por pelo de 1d a 6d, lifting, alisados, tinte, visagismo y mucho más.",
+			"Soporte y acompañamiento de profesionales con años de experiencia en el rubro.",
+			"Se entrega certificación al finalizar el programa."
+		],
+		"image": "https://firebasestorage.googleapis.com/v0/b/pierre-cursos.appspot.com/o/course3.jpg?alt=media&token=46f477d6-afee-4a46-8a4d-7ddcd17903db"
+	},
+	{
+		"title": "Peluquería",
+		"summary": " Convierte en un profesional de la peluquería en solo 10 meses",
+		"description": [
+			"Dominarás a la perfección técnicas de lavado y masaje capilar, tratamientos reconstructivos, brushing, decoloración y tinte, cortes femeninos/masculinos, distintas técnicas de corte, tendencias, colorimetría ¡y mucho más!",
+			"Incluye pasantías laborales y una carta de recomendación al finalizar el curso.",
+			"🎖Obtendrás un certificado y la posibilidad de matricularte a nivel nacional."
+		],
+		"image": "https://firebasestorage.googleapis.com/v0/b/pierre-cursos.appspot.com/o/course4.png?alt=media&token=2e2144ca-7681-496e-8f6f-7c4203cbd901"
+	},
+	{
+		"title": "Colorimetría ",
+		"summary": "Exclusivo curso de perfeccionamiento en colorimetría, convierte en un experto en solo 4 meses",
+		"description": [
+			"Aprende coloración, pigmentación y pre pigmentación, tonos fantasía, Mechas localizadas, balaye, californianas ¡Y mucho más!",
+			"Perfecciona tus habilidades y convierte en un profesional cotizado y destacado",
+			"Al finalizar el curso tienes la posibilidad de rendir equivalencias para obtener el titulo de Auxiliar Colorista Avalado a nivel Ministerial con puntaje."
+		],
+		"image": "https://firebasestorage.googleapis.com/v0/b/pierre-cursos.appspot.com/o/course1.png?alt=media&token=efe047a6-ece3-4a12-a0d6-f18d4b0861b6"
+	},
+	{
+		"title": "Depilación",
+		"summary": "Convierte en una Experta en depilación en solo 3 meses",
+		"description": [
+			"En nuestro curso, aprenderás: Depilación Integral, Sistema Español, Sistema Francés, Cuidados, Recomendaciones, Diferentes tipos de procesos y materiales, recomendaciones, entre muchos otros temas importantes!",
+			"Clases prácticas presenciales con expertas del sector.",
+			"🎖Obtendrás tu certificación al finalizar el curso."
+		],
+		"image": "https://firebasestorage.googleapis.com/v0/b/pierre-cursos.appspot.com/o/course4.png?alt=media&token=2e2144ca-7681-496e-8f6f-7c4203cbd901"
+	},
+	{
+		"title": "Maquillaje",
+		"summary": " Convierte en una Maquilladora profesional en solo 10 meses",
+		"description": [
+			"Domina a la perfección técnicas de maquillaje de las diferentes décadas, preparar la piel para un acabado duradero, Smokey eyes,Maquillaje Social, Maquillaje de Novias, Maquillaje de pasarela, Maquillaje artístico.",
+			"Materiales incluidos.",
+			"🎖Obtendrás un certificado y matriculación a nivel nacional."
+		],
+		"image": "https://firebasestorage.googleapis.com/v0/b/pierre-cursos.appspot.com/o/course2.jpg?alt=media&token=b7611d8e-d078-4d66-b9cc-41038895e968"
+	},
+	{
+		"title": "Masterclass Helados",
+		"summary": "Exclusiva MasterClass de tragos con Helados",
+		"description": [
+			"Aprenderás a combinar Cremas, Frutas Tropicales y Bebida Internacional Premium.",
+			"Clase 100% práctica con más de 15 cócteles",
+			"Se entrega constancia de participación"
+		],
+		"image": "https://firebasestorage.googleapis.com/v0/b/pierre-cursos.appspot.com/o/course3.jpg?alt=media&token=46f477d6-afee-4a46-8a4d-7ddcd17903db"
+	},
+	{
+		"title": "Automaquillaje",
+		"summary": " Exclusivo Seminario de automaquillaje para que resaltes en cualquier evento social en solo 2 encuentros",
+		"description": [
+			"Aprende a sacarle el mejor provecho a tu rostro con técnicas de maquillaje innovadoras y en tendencia ¡Materiales y herramientas incluidas!",
+			"Clase 100% práctica con beneficios exclusivos.",
+			"Se entrega constancia de participación."
+		],
+		"image": "https://firebasestorage.googleapis.com/v0/b/pierre-cursos.appspot.com/o/course1.png?alt=media&token=efe047a6-ece3-4a12-a0d6-f18d4b0861b6"
+	},
+	{
+		"title": "Mixloogía ",
+		"summary": "Exclusivo perfeccionamiento en Mixología  dirigida a bartenders",
+		"description": [
+			"Conocer bebidas y técnicas  que van más allá de los cocktails habituales es una cualidad respetada y bien recibida en el mercado laboral nacional e internacional.",
+			"Perfeccionar tus habilidades y convierte en un profesional cotizado y destacado en cualquier barra.",
+			"Único en Jujuy.",
+			"🎖Obtendrás un certificado y matriculación a nivel nacional"
+		],
+		"image": "https://firebasestorage.googleapis.com/v0/b/pierre-cursos.appspot.com/o/course1.png?alt=media&token=efe047a6-ece3-4a12-a0d6-f18d4b0861b6"
+	}
+]
