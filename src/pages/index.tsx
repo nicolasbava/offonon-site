@@ -38,7 +38,7 @@ export default function HomePage() {
       }}
     >
       <StyledTitleContainer>
-        <Grid2 container spacing={2}>
+        <Grid2 container spacing={0}>
           {/* Title Section */}
           <Grid2 size={{xs: 12, md: 8}}>
             <RevealUp>
