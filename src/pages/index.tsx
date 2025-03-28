@@ -1,62 +1,79 @@
+"use client";
+
+import { useEffect } from "react";
 import { Box, Grid2, useMediaQuery } from "@mui/material";
 import { RevealUp } from "../components/Reveal";
-import { StyledTitle, StyledTitleContainer } from '../components/Hero'
+import { StyledTitle, StyledTitleContainer } from "../components/Hero";
 import { styled, useTheme } from "@mui/material/styles";
 
-const Logo = styled("img")(({ theme }) => ({
-  maxWidth: '250px',
-  maxHeight: '250px'
-})); 
-
-
+const Logo = styled("img")(() => ({
+  maxWidth: "250px",
+  maxHeight: "250px",
+}));
 
 export default function HomePage() {
-  const theme = useTheme()
+  const theme = useTheme();
   const matchDownMd = useMediaQuery(theme.breakpoints.down("sm"));
 
-  // console.log('matchDownMd', matchDownMd)
-  
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const scriptId = "calendly-widget-script";
+      if (!document.getElementById(scriptId)) {
+        const script = document.createElement("script");
+        script.id = scriptId;
+        script.src = "https://assets.calendly.com/assets/external/widget.js";
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    }
+  }, []);
 
   return (
-    <>
-    
-    <Box sx={{ backgroundImage: "url('/offonon/offonon-pic.jpeg')", backgroundPosition: 'center', overflow: 'hidden' }} >
+    <Box
+      sx={{
+        backgroundImage: "url('/offonon/offonon-pic.jpeg')",
+        backgroundPosition: "center",
+        height: '140vh'
+        // overflow: "hidden",
+      }}
+    >
+      <StyledTitleContainer>
+        <Grid2 container spacing={2}>
+          {/* Title Section */}
+          <Grid2 size={{xs: 12, md: 8}}>
+            <RevealUp>
+              <StyledTitle variant="h2">OFFONON</StyledTitle>
+              <StyledTitle variant="h4" sx={{ fontWeight: "normal" }}>
+                Studio
+              </StyledTitle>
+            </RevealUp>
+          </Grid2>
 
-          <StyledTitleContainer >
-            <Grid2 container spacing={2}>
-              <Grid2 size={{xs: 12, md: 7}}>
-                <RevealUp>
-                  <StyledTitle variant='h2'>
-                    OFFONON
-                  </StyledTitle>
-                  <StyledTitle variant='h4' sx={{fontWeight: 'normal'}}>
-                    Próximamente 
-                  </StyledTitle>
-                </RevealUp>
-              </Grid2>
-              <Grid2 size={{xs: 12, md: 5}}>
-                <Logo
-                  src={"/offonon/offonon-logo2.png"}
-                  height="auto"
-                  width="auto"
-                  alt="alt1"
-                  loading="lazy"
-                  sx={{
-                    height: { xs: "auto", md: "auto" },
-                    width: { xs: "150px", md: "150px" },
-                    // marginLeft: 'auto',
-                    display: {xs: 'none', md: 'block'},
-                    //   minWidth: { xs: "100%" },
-                  }}
-                />
-              </Grid2>
-             
-            </Grid2>
-          </StyledTitleContainer>
+          {/* Logo Section */}
+          <Grid2 size={{xs: 12, md: 2}}>
+            <Logo
+              src={"/offonon/offonon-logo2.png"}
+              alt="alt1"
+              loading="lazy"
+              sx={{
+                height: "auto",
+                width: { xs: "150px", md: "150px" },
+                display: { xs: "none", md: "block" },
+              }}
+            />
+          </Grid2>
 
-        
+          {/* Calendly Embed */}
+          <Grid2 size={{xs: 10}} sx={{justifyContent: 'flex-start'}}>
+            <div
+              className="calendly-inline-widget"
+              data-url="https://calendly.com/nicobava96/agenda-aqui"
+              style={{ minWidth: "320px", height: "800px" }}
+            ></div>
+          </Grid2>
+        </Grid2>
+      </StyledTitleContainer>
 
     </Box>
-    </>
   );
 }

@@ -14,7 +14,7 @@ export const BgImage = styled('img')(({ theme })=>({
   }));
 
 export const StyledTitleContainer = styled(Box)(({ theme })=>({
-  marginLeft: '12vw',
+  paddingLeft: '12vw',
   height: '100vh',
   // paddingBottom: '0vh',
   width: '100%',  
