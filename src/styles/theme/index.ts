@@ -6,7 +6,7 @@ const theme = createTheme({
         button: {
             textTransform: "none",
         },
-        fontFamily: "Poppins"
+        fontFamily: "Montserrat"
     },
     palette: {
         mode: "light",

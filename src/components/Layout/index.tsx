@@ -13,9 +13,9 @@ const Layout: React.FC<LayoutProps> = ({children})=>{
 
     return (
         <>
-            {/* <Header sx={{px}}/> */}
+            <Header sx={{px}}/>
                 {children}
-            {/* <Footer sx={{px}} /> */}
+            <Footer sx={{px}} />
         </>
     )
 

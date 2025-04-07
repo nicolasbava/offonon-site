@@ -1,4 +1,5 @@
-import { styled, Typography, Box } from '@mui/material';
+import { Typography, Box } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
 export const BgImage = styled('img')(({ theme })=>({
     height: '110vh',
@@ -9,28 +10,18 @@ export const BgImage = styled('img')(({ theme })=>({
     [theme.breakpoints.up('sm')]: {
       height: '118vh',
       position: 'fixed',
-      
     }
   }));
 
-export const StyledTitleContainer = styled(Box)(({ theme })=>({
-  paddingLeft: '12vw',
-  height: '100vh',
-  // paddingBottom: '0vh',
+export const StyledTitleContainer = styled(Box)(()=>({
   width: '100%',  
-  paddingTop: '10vh',
-  // [theme.breakpoints.up('sm')]: {
-  //   marginTop: '28vh', 
-  //   marginBottom: '20vh', 
-    
-  // }
+  paddingTop: '30vh',
 }));
 
-export  const StyledTitle = styled(Typography)(({theme})=>({
+export  const StyledTitle = styled(Typography)(({ theme })=>({
     color: 'white',
     position: 'sticky',
     width: '75%',
-    // fontSize: 'min(19vw,4px)',
     fontWeight: 'bold',
     [theme.breakpoints.up('sm')]: {
       maxWidth: '50%'

@@ -29,7 +29,6 @@ const HideOnScroll: React.FC<HideOnScrollProps> = ({children, window}: HideOnScr
 };
 
 const StyledLogo = styled(Link)(()=>({
-    
     display: 'flex',
     alignItems: 'center',
     width: 'auto',
@@ -40,9 +39,8 @@ const Header = forwardRef<any, Omit<AppBarProps, "position">>((props, ref) => {
     return (
         <HideOnScroll>
             <StyledAppBar ref={ref} position="sticky" {...props} >
-                
-                <StyledLogo href='/'>
-                    <Logo style={{width: '100%', minWidth: '120px', height: 'auto', maxWidth: '162px', marginTop: '-4px'}} alt="Pierre Logo" height={90} width={80}/>
+                <StyledLogo href='/'>   
+                    <Logo style={{width: '100%', minWidth: '90px', height: 'auto', maxWidth: '85px', marginTop: '-4px'}} alt="Pierre Logo" height={90} width={80}/>
                 </StyledLogo>
                 <Stack sx={{ml: {xs: 2, md: 4, lg: 16}, display: {xs: "none", md: "flex"}}}>
                     <HeaderLinks/>

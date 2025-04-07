@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { Box, Grid2, useMediaQuery } from "@mui/material";
-import { RevealUp } from "../components/Reveal";
 import { StyledTitle, StyledTitleContainer } from "../components/Hero";
 import { styled, useTheme } from "@mui/material/styles";
 
@@ -41,12 +40,10 @@ export default function HomePage() {
         <Grid2 container spacing={0}>
           {/* Title Section */}
           <Grid2 size={{xs: 12, md: 8}}>
-            <RevealUp>
               <StyledTitle variant="h2">OFFONON</StyledTitle>
               <StyledTitle variant="h4" sx={{ fontWeight: "normal" }}>
                 Studio
               </StyledTitle>
-            </RevealUp>
           </Grid2>
 
           {/* Logo Section */}

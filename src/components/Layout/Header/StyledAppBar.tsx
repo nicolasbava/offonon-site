@@ -1,5 +1,5 @@
 import AppBar, {AppBarProps} from "@mui/material/AppBar";
-import {styled} from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 // const changeColor = () => {
     
@@ -26,7 +26,7 @@ const StyledAppBar = styled(AppBar)<AppBarProps>(({ theme }) => ({
         color: theme.palette.background.default,
         background: 'transparent',
         backdropFilter: 'blur(40px)',
-
+        position: 'fixed'
     },
 }));
 

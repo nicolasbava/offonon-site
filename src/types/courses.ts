@@ -14,3 +14,20 @@ export type CoursesArrayProps = {
     foto: string;
     fotoAlt: string
 }[];
+
+
+export interface CourseStructureItem {
+    name: string
+    duration: string
+  }
+  
+  export interface Course {
+    link: string
+    name: string
+    detail: string
+    duration: string
+    format: string
+    recordings: string
+    discount: string
+    structure: CourseStructureItem[]
+  }
