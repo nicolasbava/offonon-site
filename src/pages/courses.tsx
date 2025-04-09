@@ -43,7 +43,6 @@ const Courses = () => {
                     name: 'Sesiones de Dudas y Preguntas',
                     duration: '4 sesiones'
                 },
-                ,
                 {
                     name: 'Creación de un Track desde Cero',
                     duration: '4 sesiones'
