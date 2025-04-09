@@ -1,8 +1,8 @@
 'use client'
-import { Box, Divider, Grid2, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { DividerStyled } from "../Common/index.tsx";
-import { m, motion, useScroll, useTransform } from 'framer-motion'
+import { DividerStyled } from "../Common";
+import { motion } from 'framer-motion'
 import { useRef } from "react";
 import TextAnimation from "../Animations/TextAnimations";
 const Logo = styled("img")(() => ({

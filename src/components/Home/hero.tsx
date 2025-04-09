@@ -32,7 +32,8 @@ const Hero = () => {
           backgroundPosition: "center",
           backgroundSize: 'cover',
           height: '120vh',
-          backgroundAttachment: 'fixed'
+          backgroundAttachment: 'fixed',
+          paddingTop: '12vh'
         }}
       >
         <StyledTitleContainer>

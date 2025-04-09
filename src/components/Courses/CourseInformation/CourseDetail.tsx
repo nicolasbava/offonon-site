@@ -1,17 +1,13 @@
-import { Box, Grid2, Stack, Typography } from "@mui/material";
-import { styled } from "@mui/material/styles";
-import { SuperiorShadow } from "../../Home/RentsDJProductionSection";
-import CourseStructure from "../CourseStructure";
+import { Box, Stack, Typography } from "@mui/material";
 
 const CourseDetail = ({data}) => {
 
-    const CourseImg = styled("img")(({ theme }) => ({
-        maxWidth: "320px",
-        [theme.breakpoints.up('md')]: {
-            maxWidth: "450px",
-        }
-    }));
-    console.log('data CourseDetail', data)
+    // const CourseImg = styled("img")(({ theme }) => ({
+    //     maxWidth: "320px",
+    //     [theme.breakpoints.up('md')]: {
+    //         maxWidth: "450px",
+    //     }
+    // }));
 
 
     return (

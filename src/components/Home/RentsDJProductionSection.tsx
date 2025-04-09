@@ -1,5 +1,5 @@
-import { Box, Divider, Grid2, Typography } from "@mui/material";
-import { styled, ZIndex } from "@mui/material/styles";
+import { Box, Grid2 } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import RentsDJProductionComponent from "./RentsDJProductionComponent";
 import { motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion';
 import { useRef } from "react";

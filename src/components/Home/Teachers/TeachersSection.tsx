@@ -1,6 +1,5 @@
 import { Box, Button, Divider, Grid2, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import CoursesList from "./CoursesList";
 import { DividerStyled } from "@/components/Common";
 import TeacherComponent from "./TeacherComponent";
 

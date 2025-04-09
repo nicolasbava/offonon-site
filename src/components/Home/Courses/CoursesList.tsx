@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Grid2, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { DividerStyled } from "@/components/Common";
 
@@ -6,7 +6,7 @@ const Logo = styled("img")(() => ({
   maxWidth: "92px",
 }));
 
-const CoursesList = ({name, link}: {name:string,link:string}) => {
+const CoursesList = ({name, link}: {name:string, link:string}) => {
     
     return ( 
         <Stack sx={{maxWidth: {xs:'100%', md: '80%'}, margin: 'auto', textAlign: 'center', marginBlock: 2, }}>
@@ -25,7 +25,7 @@ const CoursesList = ({name, link}: {name:string,link:string}) => {
                 </Box>
             </Stack>
             <DividerStyled   />
-            <Button variant='contained' size='big' sx={{width: 'fit-content', marginLeft: 'auto', mt: 2}}>MÁS INFO</Button>
+            <Button variant='contained' sx={{width: 'fit-content', marginLeft: 'auto', mt: 2}}>MÁS INFO</Button>
         </Stack>
     )
 };
