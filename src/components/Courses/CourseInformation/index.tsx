@@ -1,11 +1,10 @@
-import { Box, Grid2, Stack, Typography } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Box, Grid2 } from "@mui/material";
 import { SuperiorShadow } from "../../Home/RentsDJProductionSection";
 import CourseStructure from "./CourseStructure";
 import CourseDetail from "./CourseDetail";
-import { px } from "framer-motion";
+import { Course } from "@/types/courses";
 
-const CourseInformation = ({data}) => {
+const CourseInformation = ({data} : {data: Course[]}) => {
 
 
     return (
@@ -32,7 +31,7 @@ const CourseInformation = ({data}) => {
                 <Grid2 
                     size={{ xs: 12, md: 6 }}
                 >
-                    <CourseDetail data={data} />
+                    <CourseDetail data={data[0]} />
                 </Grid2>
             </Grid2>
         </Box>

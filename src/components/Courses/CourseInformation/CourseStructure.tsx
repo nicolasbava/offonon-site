@@ -1,7 +1,8 @@
+import { Course } from "@/types/courses";
 import { Box, Grid2, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-const CourseStructure = ({ data }) => {
+const CourseStructure = ({ data } : {data: Course[]}) => {
 
     const CourseImg = styled("img")(({ theme }) => ({
         maxWidth: "290px",

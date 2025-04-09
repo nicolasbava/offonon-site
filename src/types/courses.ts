@@ -22,6 +22,8 @@ export interface CourseStructureItem {
   }
   
   export interface Course {
+    cadence: string;
+    supportSession: string;
     link: string
     name: string
     detail: string

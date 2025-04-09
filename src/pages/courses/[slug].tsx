@@ -1,21 +1,14 @@
 'use client'
 import CourseInformation from "@/components/Courses/CourseInformation";
 import HeroImageCourses from "@/components/Courses/HeroImage";
+import { Course } from "@/types/courses";
 import { Box } from "@mui/material";
-import { useEffect } from "react";
 
 
-export interface CoursesI {
-    name: string,
-    structure: {
-        name: string,
-        duration: string
-    }[]
-}
 
 const Courses = () => {
 
-    const coursesData = [
+    const coursesData : Course[] = [
         {
             link: 'music-production',
             name: 'Producción Musical',
