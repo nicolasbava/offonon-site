@@ -1,5 +1,7 @@
 import { Box, Divider, Grid2, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import { useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const ImagesComponent = styled("img")(({theme}) => ({
     maxWidth: "250px",

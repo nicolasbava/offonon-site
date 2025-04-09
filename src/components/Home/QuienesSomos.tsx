@@ -2,7 +2,7 @@
 import { Box, Divider, Grid2, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { DividerStyled } from "../Common/index.tsx";
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { m, motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from "react";
 import TextAnimation from "../Animations/TextAnimations";
 const Logo = styled("img")(() => ({
@@ -20,21 +20,22 @@ const QuienesSomos = () => {
             background: '#1d1923',
             color: 'white',
             marginTop: 4,
-            overflow: 'hidden'
+            overflow: 'hidden',
+            position: 'relative',
+            zIndex: 99
         }} >
             <Stack sx={{ maxWidth: { xs: '100%', md: '75%' }, margin: 'auto' }}>
                 <Stack sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-                    <motion.div
+                    {/* <motion.div
                         ref={ref}
                         initial={{ width: 0 }}
-                        style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}
                         animate={{ width: '100%' }}
                         transition={{ delay: 0.5, duration: 2, ease: 'easeInOut' }}
-                    >
-                        <Typography sx={{ fontSize: '43px', fontWeight: 'bold', minWidth: { xs: 'auto', md: '400px' } }}>
+                    > */}
+                        <Typography sx={{ fontSize: {xs: '28px',md:'43px'}, fontWeight: 'bold', minWidth: { xs: '250px',sm:'320px', md: '400px' }, width: 'max-content' }}>
                             ¿Quiénes somos?
                         </Typography>
-                    </motion.div>
+                    {/* </motion.div> */}
                     <motion.div
                         initial={{ width: 0, opacity: 0 }}
                         ref={ref}

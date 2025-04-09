@@ -31,7 +31,7 @@ const Footer = forwardRef<any, BoxProps>((props, ref) => {
   const theme = useTheme();
 
   return (
-    <Box>
+    <Box sx={{position: 'relative', zIndex: 99}}>
       <StyledWhatsappAnchor />
 
       <StyledFooterContainer ref={ref} {...props}>

@@ -43,10 +43,10 @@ const Hero = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               exit={{opacity: 0}}
-                style={{
-                // x: translateX,
-                  opacity: opacity
-                }}
+              style={{
+              // x: translateX,
+                opacity: opacity
+              }}
             >
               <Logo
                 src={"/offonon/offonon-logo2.png"}
@@ -65,7 +65,6 @@ const Hero = () => {
                 whileInView={{ position: 'relative', top: '0px', opacity: 1 }}
                 transition={{delay: 0.1, duration: 0.5}}
                 style={{
-                  // x: translateXN, // This animates as you scroll
                   opacity: opacity
                 }}
               >

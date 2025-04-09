@@ -1,7 +1,8 @@
 import { Box, Divider, Grid2, Typography } from "@mui/material";
 import { styled, ZIndex } from "@mui/material/styles";
 import RentsDJProductionComponent from "./RentsDJProductionComponent";
-import { motion } from 'framer-motion';
+import { motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion';
+import { useRef } from "react";
 
 const ImagesComponent = styled("img")(({ theme }) => ({
     maxWidth: "250px",
@@ -22,51 +23,64 @@ export const SuperiorShadow = styled(Box)(() => ({
         height: '220px',
         background: 'linear-gradient(to top, #1d1923 0%, transparent 100%)',
         pointerEvents: 'none',
-        zIndex: 199
+        zIndex: 299
     }
 }))
 
 const RentsDJProductionSection = () => {
+    const ref = useRef<HTMLDivElement>(null);
+
+    // Get scroll progress of the ref element
+    const { scrollYProgress, scrollY } = useScroll({
+        target: ref,
+        offset: ['start end', 'end start'],
+    });
+    // const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+    
+    useMotionValueEvent(scrollY, 'change', (val) => {
+        console.log(val)
+    })
+    const opacity = useTransform(scrollY, [726, 970, 1300], [0, 1, 0])
 
     return (
         <>
             <SuperiorShadow />
-            <Box sx={{ my: 42 }}>
+            <Box sx={{ py: 42, position: 'relative', zIndex: 2, background: '#1d1923' }}>
+                <Box >
 
-                <Grid2 container spacing={{ xs: 4, md: 2 }} sx={{ marginTop: 8, paddingInline: { xs: 0, md: '8vw' }, justifyContent: 'center' }}>
-                    <Grid2 size={{ xs: 12, md: 4 }} sx={{ display: 'flex', justifyContent: 'center' }}>
-                        <motion.div
-                            initial={{ position: 'relative', top: '150px', opacity: 0 }}
-                            whileInView={{ position: 'relative', top: '0px', opacity: 1 }}
-                            transition={{ duration: 2 }}
-                            exit={{opacity: '   '}}
-                        >
-                            <RentsDJProductionComponent src={"/offonon/dj.png"} title={'DJ'} />
-                        </motion.div>
-                    </Grid2>
-                    <Grid2 size={{ xs: 12, md: 4 }} sx={{ display: 'flex', justifyContent: 'center' }}>
-                        <motion.div
-                            initial={{ position: 'relative', top: '150px', opacity: 0 }}
-                            whileInView={{ position: 'relative', top: '0px', opacity: 1 }}
-                            transition={{ delay: 1, duration: 2, }}
-                        >
-                            <RentsDJProductionComponent src={"/offonon/produccion.png"} title={'PRODUCCIÓN'} />
-                        </motion.div>
+                    <Grid2 container spacing={{ xs: 4, md: 2 }} sx={{ marginTop: 8, paddingInline: { xs: 0, md: '8vw' }, justifyContent: 'center' }}>
+                        <Grid2 size={{ xs: 12, md: 4 }} sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <motion.div
+                                style={{
+                                    opacity
+                                }}
+                            >
+                                <RentsDJProductionComponent src={"/offonon/dj.png"} title={'DJ'} />
+                            </motion.div>
+                        </Grid2>
+                        <Grid2 size={{ xs: 12, md: 4 }} sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <motion.div
+                                style={{
+                                    opacity
+                                }}
+                            >
+                                <RentsDJProductionComponent src={"/offonon/produccion.png"} title={'PRODUCCIÓN'} />
+                            </motion.div>
 
-                    </Grid2>
-                    <Grid2 size={{ xs: 12, md: 4 }} sx={{ display: 'flex', justifyContent: 'center' }}>
-                        <motion.div
-                            initial={{ position: 'relative', top: '150px', opacity: 0 }}
-                            whileInView={{ position: 'relative', top: '0px', opacity: 1 }}
-                            transition={{ delay: 2, duration: 2, }}
-                        >
-                            <RentsDJProductionComponent src={"/offonon/rentas.png"} title={'RENTAS'} />
-                        </motion.div>
+                        </Grid2>
+                        <Grid2 size={{ xs: 12, md: 4 }} sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <motion.div
+                                style={{
+                                    opacity
+                                }}
+                            >
+                                <RentsDJProductionComponent src={"/offonon/rentas.png"} title={'RENTAS'} />
+                            </motion.div>
 
+                        </Grid2>
                     </Grid2>
-                </Grid2>
+                </Box>
             </Box>
-
         </>
     )
 };

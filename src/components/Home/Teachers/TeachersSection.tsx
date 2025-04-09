@@ -35,6 +35,29 @@ const infoCourses = [
 
 const TeachersSection = () => {
 
+    const teachersData = [
+        {
+            url: 'pakal-docente.png',
+            name: 'Pakal Vega'
+        },
+        {
+            url: 'tao-docente.png',
+            name: 'Tao Vega'
+        },
+        {
+            url: 'nico-docente.png',
+            name: 'Nicolás Bava'
+        },
+        {
+            url: 'pakal-docente.png',
+            name: 'Pakal Vega'
+        },
+        {
+            url: 'pakal-docente.png',
+            name: 'Pakal Vega'
+        }
+    ]
+
     return (
         <Box sx={{ maxWidth: '80%', margin: 'auto', textAlign: 'center', marginBlock: 4, mt: 8 }}>
             <Stack sx={{ flexDirection: 'row', alignItems: 'center', gap: 2 }}>
@@ -42,9 +65,9 @@ const TeachersSection = () => {
                 <Typography sx={{ fontSize:{xs:'28px', md: '46px'}, fontWeight: '600', minWidth: {xs:'112px',md: '457px'} }}>Nuestros docentes</Typography>
             </Stack>
             <Grid2 container direction='row' spacing={0} columns={10} sx={{margin: 'auto', mt: 4, alignItems: 'center', justifyContent: 'center' }}>
-                    {infoCourses.map(ele => (
-                        <Grid2 key={ele.title}  size={{ xs: 10, md: 2 }}>
-                            <TeacherComponent />
+                    {teachersData.map(ele => (
+                        <Grid2 key={ele.name}  size={{ xs: 10, md: 2 }}>
+                            <TeacherComponent data={ele}/>
                         </Grid2>
                     ))}
             </Grid2>

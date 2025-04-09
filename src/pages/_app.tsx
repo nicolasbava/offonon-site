@@ -13,7 +13,6 @@ import theme from '@/styles/theme';
 import {EmotionCache} from "@emotion/cache";
 
 import AppProvider from "@/context/app";
-import Layout from "@/components/Layout";
 
 
 const clientSideEmotionCache = createEmotionCache();
@@ -27,9 +26,7 @@ export default function App({Component, emotionCache = clientSideEmotionCache, p
         <ThemeProvider theme={theme}>
             <CssBaseline/>
             <AppProvider>
-                <Layout>    
                     <Component {...pageProps} />
-                </Layout>
                 <ToastContainer theme="colored" limit={3}/>
             </AppProvider>
         </ThemeProvider>

@@ -7,11 +7,12 @@ import RentsDJProductionSection from "@/components/Home/RentsDJProductionSection
 import TeachersSection from "@/components/Home/Teachers/TeachersSection";
 import FinalBanner from "@/components/Home/FinalBanner";
 import RegisterSection from "@/components/Home/Register";
+import Layout from "@/components/Layout";
 
 const HomePage = () => {
 
   return (
-    <>
+    <Layout>
       <Hero />
       <RentsDJProductionSection />
       <QuienesSomos />
@@ -21,7 +22,7 @@ const HomePage = () => {
       <TeachersSection />
       <RegisterSection />
       <FinalBanner />
-    </>
+    </Layout>
    
   );
 };

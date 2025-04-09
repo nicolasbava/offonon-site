@@ -16,7 +16,7 @@ const RegisterSection = () => {
         // You can add more logic here
     };
     return (
-        <Box sx={{ maxWidth: '80%', margin: 'auto', textAlign: 'center', marginTop: 22, marginBottom: 8 }}>
+        <Box sx={{ maxWidth: '80%', margin: 'auto', textAlign: 'center', marginTop: 22, marginBottom: 8, position: 'relative', zIndex: 99 }}>
             <Typography sx={{ fontSize: { xs: '32px', md: '38px' }, fontWeight: 'bold' }}>Regístrate para más información</Typography>
             <Box
                 sx={{

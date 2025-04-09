@@ -5,7 +5,7 @@ const Promotion = () => {
     
     return (
     <>
-        <Box >
+        <Box sx={{position: 'relative', zIndex: 9,}}>
             <Grid2 container>
                 <Grid2  
                     size={{xs: 12, md: 6}} 

@@ -25,7 +25,7 @@ const CoursesList = ({name, link}: {name:string,link:string}) => {
                 </Box>
             </Stack>
             <DividerStyled   />
-            <Button variant='contained' size='big' sx={{width: 'fit-content', marginLeft: 'auto', mt: 2}}>MÁS INFO {link}</Button>
+            <Button variant='contained' size='big' sx={{width: 'fit-content', marginLeft: 'auto', mt: 2}}>MÁS INFO</Button>
         </Stack>
     )
 };

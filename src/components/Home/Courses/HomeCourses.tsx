@@ -11,8 +11,8 @@ const Logo = styled("img")(() => ({
 
 const infoCourses = [
     {
-        title: 'BÁSICO ONLINE PRESENCIAL NORMAL',
-        link: '#'
+        title: 'Producción Musical',
+        link: '/courses/music-production'
     },
     {
         title: 'BÁSICO ONLINE PRESENCIAL INTENSIVO',
@@ -35,7 +35,7 @@ const infoCourses = [
 const HomeCourses = () => {
 
     return (
-        <Box sx={{ maxWidth: '80%', margin: 'auto', textAlign: 'center', marginBlock: 4, mt: 8 }}>
+        <Box sx={{ maxWidth: '80%', margin: 'auto', textAlign: 'center', marginBlock: 4, mt: 8, position: 'relative', zIndex: 99 }}>
             <Stack sx={{ flexDirection: 'row', alignItems: 'center', gap: 2 }}>
                 <Typography sx={{ fontSize: {xs:'28px', md: '46px'}, fontWeight: '600', width: {xs:'100%', md:'600px'} }}>Nuestros cursos</Typography>
                 <DividerStyled />

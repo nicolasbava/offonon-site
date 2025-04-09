@@ -32,12 +32,11 @@ export default function HomePage() {
       sx={{
         backgroundImage: "url('/offonon/offonon-pic.jpeg')",
         backgroundPosition: "center",
-        height: '140vh'
-        // overflow: "hidden",
+        height: '140vh',
       }}
     >
       <StyledTitleContainer>
-        <Grid2 container spacing={0}>
+        <Grid2 container spacing={0} sx={{alignItems: 'center', justifyContent: 'center'}}>
           {/* Title Section */}
           <Grid2 size={{xs: 12, md: 8}}>
               <StyledTitle variant="h2">OFFONON</StyledTitle>

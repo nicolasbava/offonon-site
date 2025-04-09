@@ -8,7 +8,7 @@ const Logo = styled("img")(() => ({
 const FinalBanner = () => {
 
   return (
-    <Box sx={{ background: '#060606' }}>
+    <Box sx={{ background: '#060606', position: 'relative', zIndex: 99 }}>
       <Box
         sx={{
           height: '60vh',
