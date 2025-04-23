@@ -22,7 +22,7 @@ const HeroImageCourses = () => {
                 backgroundAttachment: 'fixed'
             }}
         >
-            <Stack sx={{ pt: 22, flexDirection: { xs: 'column', md: 'row' }, alignItems:'center', justifyContent:'space-around' }}>
+            <Stack sx={{ pt: 22, flexDirection: { xs: 'column', md: 'row' }, alignItems:'center', justifyContent:'space-around', position: 'fixed', zIndex: 0 }}>
                 <Typography  sx={{
                     textTransform: 'uppercase',
                     fontWeight: 'bold',

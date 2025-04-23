@@ -18,7 +18,12 @@ const RentsDJProductionComponent = ({src,title}: {src: string, title: string}) =
 
     return (
         <>
-        <Box className='ImageRentsDJProductionComponent' sx={{position: 'relative', cursor: 'pointer', '&:hover': { transform: 'scale(1.02)' }, }}>
+        <Box 
+            className='ImageRentsDJProductionComponent' 
+            sx={{
+                position: 'relative', 
+                cursor: 'pointer', 
+            }}>
             <ImagesComponent
                 src={src}
                 alt="alt1"
@@ -27,10 +32,16 @@ const RentsDJProductionComponent = ({src,title}: {src: string, title: string}) =
                     height: "auto",
                     margin: "auto",
                     transition: '250ms all ease',
-                    '&:hover': {    
-                        transform: 'scale(1.02)'
-                    }
+                    filter: 'brightness(0.2)',
+                    '.ImageRentsDJProductionComponent:hover &': {    
+                        filter: 'brightness(1)'
+                    },
+                    borderRadius: '84px',
+                    objectFit: 'cover',
+                    boxShadow: '0 12px 32px rgba(0, 0, 0, 0.4)',
+                    my: {xs: 2, md: 4}
                 }}
+                
             />
             <Typography sx={{
                 position: 'absolute',

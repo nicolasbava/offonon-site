@@ -24,6 +24,7 @@ const Hero = () => {
   });
 
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
+  // const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
   return (  
     <>
       <Box
@@ -37,7 +38,7 @@ const Hero = () => {
         }}
       >
         <StyledTitleContainer>
-          <Stack sx={{ display: 'flex', alignItems: 'center' }}>
+          <Stack sx={{ display: 'flex', alignItems: 'center',position: 'fixed', right: 0, left: 0  }}>
             <motion.div
               ref={ref}
               initial={{ opacity: 0 }}

@@ -27,17 +27,18 @@ export interface AppContextState {
 export const INITIAL_STATE: AppContextState = {
   menu: {
      open: false,
-      items: [  {id: "home", label: "Inicio", path: "/" },
-        {id: "courses", label: "Cursos", path: "/cursos" },
-        {id: "events", label: "Eventos", path: "/eventos" },
-        {id: "work-with-us", label: "Trabaja con nosotros", path: "/trabaja-con-nosotros" },
+      items: [  {id: "home", label: "Inicio", path: "/home/" },
+        {id: "us", label: "Nosotros", path: "/home#us" },
+        {id: "courses", label: "Cursos", path: "/home/#courses" },
+        {id: "teachers", label: "Docentes", path: "/home/#teachers" },
         // {id: "contact", label: "CONTACTO", path: "/#contact" },
 
       ]
   },
   px: {xs: 1, md:6, lg:10},
   breakPoint: "lg",
-  geoData: null
+  geoData: null,
+  
 
 } as AppContextState
 

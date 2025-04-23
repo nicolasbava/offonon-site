@@ -1,5 +1,5 @@
 import { Box, Grid2 } from "@mui/material";
-import { SuperiorShadow } from "../../Home/RentsDJProductionSection";
+import { SuperiorShadow } from "../../Home/RentsDJProduction/RentsDJProductionSection";
 import CourseStructure from "./CourseStructure";
 import CourseDetail from "./CourseDetail";
 import { Course } from "@/types/courses";
@@ -12,7 +12,9 @@ const CourseInformation = ({data} : {data: Course[]}) => {
             sx={{
                 minHeight: '170vh',
                 background: '#1d1923',
-                marginBottom: '30vh'
+                marginBottom: '30vh',
+                position: 'relative',
+                zIndex: 10
             }}
         >
             <SuperiorShadow />

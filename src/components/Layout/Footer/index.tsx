@@ -9,6 +9,7 @@ import StyledFooterSection from "@/components/Layout/Footer/StyledFooterSection"
 import { LogoFooter } from "@/components/Logo";
 // import StyledTitleElement from '@/components/StyledTitleElement';
 import StyledWhatsappAnchor from "@/components/StyledWhatsappAnchor";
+import FooterMap from "./FooterMap";
 
 const ImageElement = styled("img")(() => ({}));
 
@@ -44,8 +45,12 @@ const Footer = forwardRef<any, BoxProps>((props, ref) => {
             md: "space-evenly",
             lg: "space-between",
           }}
-          sx={{ paddingTop: "5vh", flexDirection: {xs:'column', md: 'row'} }}>
-          <Grid item xs={12} md={3}>
+          sx={{ 
+             flexDirection: {xs:'column', md: 'row'}
+          }}
+        >
+
+          <Grid item xs={12} md={3} mt={4}>
             <StyledFooterSection>
               <Link href="/">
                 <LogoFooter
@@ -57,17 +62,15 @@ const Footer = forwardRef<any, BoxProps>((props, ref) => {
             </StyledFooterSection>
           </Grid>
 
-          <Grid item xs={12} md={3} mb={{ xs: 0, md: 8 }} my={{xs: 4, md:2}}>
-            <Typography sx={{ color: "white", fontSize: "26px", textAlign: {xs: 'center', md: 'left'}, maxWidth: {xs: '100%', sm: '80%'}, margin:'auto', marginRight: 'auto' }}>
-              “Formando verdaderos profesionales”
-            </Typography>
-          </Grid>
 
           <Grid
             item
             xs={12}
-            md={3}
-            sx={{ color: theme.palette.background.default, marginBlock: {xs: 4, md: 0},  }}>
+            md={3}  
+            sx={{ color: theme.palette.background.default, marginBlock: {xs: 4, md: 0},  }}
+            pt={4}
+            
+            >
             <Typography variant="h5" mb={1} >
               Menú
             </Typography>
@@ -90,7 +93,7 @@ const Footer = forwardRef<any, BoxProps>((props, ref) => {
             </StyledUl>
           </Grid>
 
-          <Grid item xs={12} md={3} mb={{ xs: 7, md: 4 }} >
+          <Grid item xs={12} md={3} mb={{ xs: 7, md: 4 }} pt={4} >
             <StyledLink target="_blank" href="https://www.instagram.com/centropierre/">
               <Stack direction="row" my={1} spacing={1}>
                 <ImageElement
@@ -151,6 +154,15 @@ const Footer = forwardRef<any, BoxProps>((props, ref) => {
               </Stack>
             </StyledLink>
           </Grid>
+          
+          <Grid item xs={12} md={3}  >
+            {/* <Typography sx={{ color: "white", fontSize: "26px", textAlign: {xs: 'center', md: 'left'}, maxWidth: {xs: '100%', sm: '80%'}, margin:'auto', marginRight: 'auto' }}>
+              “Formando verdaderos profesionales”
+            </Typography> */}
+
+            <FooterMap /> 
+          </Grid>
+
         </Grid>
       </StyledFooterContainer>
     </Box>

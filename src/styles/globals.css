@@ -28,6 +28,7 @@ html {
 
 body {
   background: #1d1923;
-  color: white
+  color: white;
+  scroll-behavior: smooth;
 
 }

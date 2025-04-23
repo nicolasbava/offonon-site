@@ -13,7 +13,7 @@ const AppProvider = ({children}: AppProviderProps) => {
 
     const toggleMenu = (payload?: boolean) => {
         dispatch({type: "setMenuOpened", payload})
-    }
+    };
     const useWidth = (): Breakpoint => {
         const theme = useTheme();
         const keys = [...theme.breakpoints.keys].reverse();
@@ -24,7 +24,7 @@ const AppProvider = ({children}: AppProviderProps) => {
                 return !output && matches ? key : output;
             }, null) || "xs"
         );
-    }
+    };
 
     React.useEffect(() => {
         fetch("https://ipapi.co/json/", {method: "get"}).then(async (r) => {

@@ -11,13 +11,14 @@ const Promotion = () => {
                     size={{xs: 12, md: 6}} 
                     sx={{
                         padding: 4, 
-                        backgroundImage: 'url(/offonon/Imagen-Azul.png)',
+                        backgroundImage: 'url(/offonon/fondo-azul.png)',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center', 
                         height: {xs: '55vh', md:'55vh' }, 
                         display: 'flex',
                         justifyContent: 'center',
-                        alignItems: 'center'
+                        alignItems: 'center',
+                        backgroundAttachment: 'fixed'
                     }}
                 >
                         <Stack 
@@ -45,7 +46,7 @@ const Promotion = () => {
                                     color: 'white',
                                     width: 'fit-content',
                                     margin: 'auto',
-                                    mt: 2,
+                                    pt: 2,
                                     px: {xs: 6, sm:6, md:8, lg: 10}
                                 }}> ADQUIRIR</Button>
                         </Stack>
