@@ -28,12 +28,12 @@ const QuienesSomos = () => {
             style={{
                 position: 'sticky',
                 top: isXs? "10%" : '30%',
-                // zIndex
                 filter: blur
             }}
         >
 
-            <Box sx={{
+            <Box 
+            sx={{
                 paddingInline: '32px',
                 paddingBottom: '32px',
                 marginTop: 44,
