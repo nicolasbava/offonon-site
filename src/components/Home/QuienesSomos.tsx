@@ -19,7 +19,7 @@ const QuienesSomos = () => {
 
 
     const blur = useTransform(scrollYProgress, [0, 0.44, 1.5], ['blur(4px)', 'blur(0px)', 'blur(4px)',]);
-    const zIndex = useTransform(scrollY, [0, 2500], [99, -19]);
+    // const zIndex = useTransform(scrollY, [0, 2500], ['99', -19]);
 
     return (
 
@@ -42,7 +42,7 @@ const QuienesSomos = () => {
                 color: 'white',
                 overflow: 'hidden',
                 position: 'relative',
-                zIndex: zIndex
+                // zIndex: zIndex
             }} >
                 <Stack sx={{ maxWidth: { xs: '100%', md: '75%' }, margin: 'auto' }}>
                     <Stack sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
