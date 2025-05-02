@@ -88,7 +88,7 @@ const coursesData : Course[] = [
                 ]
             },
             {
-                name: 'Sintesis 1 y 2',
+                name: 'Síntesis 1 y 2',
                 duration: '16 sesiones'
             },
             {

@@ -30,7 +30,7 @@ const Courses = () => {
                     duration: '16 sesiones'
                 },
                 {
-                    name: 'Sintesis 1 y 2',
+                    name: 'Síntesis 1 y 2',
                     duration: '16 sesiones'
                 },
                 {
@@ -63,7 +63,7 @@ const Courses = () => {
                     duration: '16 sesiones'
                 },
                 {
-                    name: 'Sintesis 1 y 2',
+                    name: 'Síntesis 1 y 2',
                     duration: '16 sesiones'
                 },
                 {

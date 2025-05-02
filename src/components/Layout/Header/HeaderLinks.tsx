@@ -33,7 +33,7 @@ import StyledLinkText  from "@/components/Layout/Header/StyledLinkText";
         </Stack>
 
            {/* <Stack gap={1} direction="row" sx={{ml:1}} >
-               <Link href="/inscribete">
+               <Link href="/inscribiete">
                    <StyledButton size="small" variant="contained" >Inscribete</StyledButton>
                </Link>
            </Stack> */}
