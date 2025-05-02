@@ -20,7 +20,7 @@ const infoCourses = [
         link: '/courses/music-production'
     },
     {
-        title: 'Taller Pioneer DJ',
+        title: 'Taller de DJ Inicial',
         link: '/courses/pioneer-dj'
     }
 ]

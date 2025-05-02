@@ -76,25 +76,28 @@ const Footer = forwardRef<any, BoxProps>((props, ref) => {
             </Typography>
             <StyledUl >
               <li>
-                <StyledLink href={"/"}>Inicio</StyledLink>
+                <StyledLink href={"/home"}>Inicio</StyledLink>
               </li>
               <li>
-                <StyledLink href={"/cursos"}>Cursos</StyledLink>
+                <StyledLink href={"/home#us"}>Nosotros</StyledLink>
               </li>
               <li>
-                <StyledLink href={"/eventos"}>Eventos</StyledLink>
+                <StyledLink href={"/home#courses"}>Cursos</StyledLink>
               </li>
               <li>
-                <StyledLink href={"/trabaja-con-nosotros"}>Trabaja con nosotros</StyledLink>
+                <StyledLink href={"/home#teachers"}>Docentes</StyledLink>
               </li>
-              <li>
+              {/* <li>
                 <StyledLink href={"/inscribete"}>Inscribete</StyledLink>
-              </li>
+              </li> */}
             </StyledUl>
           </Grid>
 
-          <Grid item xs={12} md={3} mb={{ xs: 7, md: 4 }} pt={4} >
-            <StyledLink target="_blank" href="https://www.instagram.com/centropierre/">
+          <Grid item xs={12} md={3} mb={{ xs: 7, md: 4 }} pt={{xs: 4, lg: 10}} >
+            {/* <Typography variant="h5" mb={1} >
+              Encuéntranos
+            </Typography> */}
+            <StyledLink target="_blank" href="https://www.instagram.com/offonon.studio/?locale=us&hl=en">
               <Stack direction="row" my={1} spacing={1}>
                 <ImageElement
                   src="/logo-ig.png"
@@ -106,7 +109,7 @@ const Footer = forwardRef<any, BoxProps>((props, ref) => {
               </Stack>
             </StyledLink>
 
-            <StyledLink target="_blank" href="https://www.facebook.com/CentroPIERRE">
+            {/* <StyledLink target="_blank" href="https://www.facebook.com/CentroPIERRE">
               <Stack direction="row" my={1} spacing={1}>
                 <ImageElement
                   src="/logo-fb.png"
@@ -116,9 +119,9 @@ const Footer = forwardRef<any, BoxProps>((props, ref) => {
                 />
                 <Typography variant="body2">Facebook</Typography>
               </Stack>
-            </StyledLink>
+            </StyledLink> */}
 
-            <StyledLink target="_blank" href="https://api.whatsapp.com/send/?phone=5493884778611&text&type=phone_number&app_absent=0">
+            {/* <StyledLink target="_blank" href="https://api.whatsapp.com/send/?phone=5493884778611&text&type=phone_number&app_absent=0">
               <Stack direction="row" my={1} spacing={1}>
                 <ImageElement
                   src="/logo-wsp.png"
@@ -128,7 +131,7 @@ const Footer = forwardRef<any, BoxProps>((props, ref) => {
                 />
                 <Typography variant="body2">Whatsapp</Typography>
               </Stack>
-            </StyledLink>
+            </StyledLink> */}
 
             <StyledLink target="_blank" href="mailto:centroprofesionalpierre@gmail.com">
               <Stack direction="row" my={1} spacing={1}>
@@ -142,7 +145,7 @@ const Footer = forwardRef<any, BoxProps>((props, ref) => {
               </Stack>
             </StyledLink>
 
-            <StyledLink target="_blank" href="https://goo.gl/maps/ZqNUo4ANqQJoYdKP7">
+            <StyledLink target="_blank" href="https://www.google.com/maps/place/Yautepec+2,+Colonia+Condesa,+Cuauht%C3%A9moc,+06140+Ciudad+de+M%C3%A9xico,+CDMX/data=!4m2!3m1!1s0x85d1ff445e6ad69d:0xff5b5e32bf3a87b5?sa=X&ved=1t:242&ictx=111">
               <Stack direction="row" my={1} spacing={1}>
                 <ImageElement
                   src="/logo-location.png"
@@ -150,7 +153,7 @@ const Footer = forwardRef<any, BoxProps>((props, ref) => {
                   width="20"
                   height="20"
                 />
-                <Typography variant="body2">Gral. San Martin 698</Typography>
+                <Typography variant="body2">Yautepec 2, Condesa CDMX</Typography>
               </Stack>
             </StyledLink>
           </Grid>

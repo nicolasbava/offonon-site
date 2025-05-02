@@ -12,9 +12,6 @@ import { styled } from "@mui/material/styles";
 
 
 const StyledAppBar = styled(AppBar)<AppBarProps>(({ theme }) => ({
-
-
-
     "&.MuiAppBar-root": {
         // background: 'transparent',
         width: "100%",
