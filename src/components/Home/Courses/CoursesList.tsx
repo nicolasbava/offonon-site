@@ -1,6 +1,7 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { DividerStyled } from "@/components/Common";
+import Link from "next/link";
 
 const Logo = styled("img")(() => ({
   maxWidth: "92px",
@@ -25,7 +26,9 @@ const CoursesList = ({name, link}: {name:string, link:string}) => {
                 </Box>
             </Stack>
             <DividerStyled   />
-            <Button variant='contained' sx={{width: 'fit-content', marginLeft: 'auto', mt: 2}}>MÁS INFO</Button>
+            <Link href={link}>
+                <Button variant='contained' sx={{width: 'fit-content', marginLeft: 'auto', mt: 2}}>MÁS INFO</Button>
+            </Link>
         </Stack>
     )
 };

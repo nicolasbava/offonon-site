@@ -19,6 +19,7 @@ export type CoursesArrayProps = {
 export interface CourseStructureItem {
     name: string
     duration: string
+    description: string[]
   }
   
   export interface Course {
