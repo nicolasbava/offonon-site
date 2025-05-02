@@ -75,7 +75,7 @@ const CourseInformation = ({data} : {data: Course[]}) => {
                     {/* <GroupScheduleTable groups={groupData} className="bg-transparent" /> */}
                 </Grid2>
             </Grid2>
-            <Stack sx={{maxWidth: '60%', margin: 'auto'}}>
+            <Stack sx={{maxWidth: {xs: '100%', md: '60%'}, margin: 'auto'}}>
                 <CourseDetail2 data={data[0]} />
                 <GroupScheduleTable groups={groupData} className="bg-transparent" />
             </Stack>
