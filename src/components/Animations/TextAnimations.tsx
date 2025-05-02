@@ -3,19 +3,19 @@ import {motion} from 'framer-motion'
 
 const TextAnimation = ({text} : {text: string}) => {
 
-    const defaultAnimations = {
-            hidden: {
-                opacity: 0,
-            },
-            visible: {
-                opacity: 1
-            }
-    }
+    // const defaultAnimations = {
+    //         hidden: {
+    //             opacity: 0,
+    //         },
+    //         visible: {
+    //             opacity: 1
+    //         }
+    // }
 
     return (
         <>
          
-        <motion.span aria-hidden
+        {/* <motion.span aria-hidden
             style={{overflow: 'hidden', display: 'inline-block',  }}
             initial='hidden'
             animate='visible'
@@ -26,7 +26,7 @@ const TextAnimation = ({text} : {text: string}) => {
                     {char}
                 </motion.span>
             ) ) }
-        </motion.span>
+        </motion.span> */}
         </>
     )
 };

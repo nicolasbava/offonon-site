@@ -37,7 +37,7 @@ const CourseDetail = ({data} : {data: Course}) => {
                 <Typography>{data.discount}</Typography>
             </Stack>
 
-            <Typography mt={4} variant='h3' fontWeight={'bold'}>Calendario</Typography>
+            {/* <Typography mt={4} variant='h3' fontWeight={'bold'}>Calendario</Typography>
 
             <Stack direction={'row'} mt={2}>
                 <Typography mr={1} fontWeight={'bold'}>Horarios flexibles:</Typography>
@@ -53,6 +53,15 @@ const CourseDetail = ({data} : {data: Course}) => {
                 <Typography mr={1} fontWeight={'bold'}>Sesión de Dudas y Creación de Track:</Typography>
                 <Typography>{data.supportSession}</Typography>
             </Stack>
+
+            <Stack direction={'row'} mt={2}>
+                <Typography mr={1} fontWeight={'bold'}>Sesión de Dudas y Creación de Track:</Typography>
+                <Typography>{data.supportSession}</Typography>
+            </Stack>
+
+            <Stack direction={'row'} mt={2} mb={1}>
+                <Typography mr={1} fontWeight={'bold'}>Itinerario semanal de ejemplo:</Typography>
+            </Stack> */}
         </Box>
     )
 };

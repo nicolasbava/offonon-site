@@ -22,11 +22,11 @@ const HeroImageCourses = () => {
                 backgroundAttachment: 'fixed'
             }}
         >
-            <Stack sx={{ pt: 22, flexDirection: { xs: 'column', md: 'row' }, alignItems:'center', justifyContent:'space-around', position: 'fixed', zIndex: 0 }}>
+            <Stack sx={{ pt: 22, flexDirection: { xs: 'column', md: 'row' }, alignItems:'center', justifyContent:'space-around', position: 'fixed', zIndex: 0, width: '100%' }}>
                 <Typography  sx={{
                     textTransform: 'uppercase',
                     fontWeight: 'bold',
-                    fontSize: {xs:'42px',md:'64px', lg:'82px'},
+                    fontSize: {xs:'22px',md:'64px', lg:'82px'},
                     width: {xs:'auto', md: '28%'},
                     textShadow: '8px 8px 0px black',
                     textAlign:{xs: 'center', md: 'left'}

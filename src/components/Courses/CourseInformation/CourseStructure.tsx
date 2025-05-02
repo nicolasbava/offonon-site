@@ -31,7 +31,7 @@ const CourseStructure = ({ data } : {data: Course[]}) => {
                 <Typography sx={{position: 'absolute', top: '40%', left: '0', right: '0', fontSize: '26px', fontWeight: 'bold', textShadow: '2px 2px 0px black', width: {xs: '60%',md:'45%'}, margin: 'auto'}}>PRODUCCIÓN MUSICAL</Typography>
             </Box>
 
-            <Grid2 container sx={{width: {xs: '100%', md:'80%'}, margin: 'auto', mt: 4}}>
+            {/* <Grid2 container sx={{width: {xs: '100%', md:'80%'}, margin: 'auto', mt: 4}}>
                 <Grid2 size={{ xs: 12, md: 11.5 }}>
                     <Typography variant='h3' sx={{ fontWeight: 'bold' }}>Estructura</Typography>
                     {data[0].structure.map((ele, key) => (
@@ -46,7 +46,7 @@ const CourseStructure = ({ data } : {data: Course[]}) => {
 
                 </Grid2>
 
-            </Grid2>
+            </Grid2> */}
 
         </Box>
     )

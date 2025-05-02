@@ -19,7 +19,6 @@ const Discounts = () => {
 
 
     const blur = useTransform(scrollYProgress, [0, 0.44, 1.5], ['blur(4px)', 'blur(0px)', 'blur(4px)']);
-    const position = useTransform(scrollYProgress, [0, 0.45], ['relative', 'sticky'])
 
 
     return (
@@ -27,14 +26,15 @@ const Discounts = () => {
 
             <motion.div
                 ref={ref}
-                initial={{ width: 0 }}
-                animate={{ width: '100%' }}
+                // initial={{ width: 0 }}
+                // animate={{ width: '100%' }}
                 transition={{ delay: 0.5, duration: 2, ease: 'easeInOut' }}
                 style={{
                     filter: blur,
-                    position: position,
+                    // position: position,
                     top: '10%',
-                    marginTop: '-2px'
+                    marginTop: '-2px',
+                    width: '100%'
                 }}
             >
                 <Box ref={ref} sx={{ paddingInline:{xs: 8, md: 12}, margin: 'auto', textAlign: 'center', paddingBlock: 44, top: 0, zIndex: 99, background: '#1d1923' }}>
