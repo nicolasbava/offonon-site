@@ -23,9 +23,9 @@ export interface MyAppProps extends AppProps {
 export default function App({Component, emotionCache = clientSideEmotionCache, pageProps}: MyAppProps) {
     return <CacheProvider value={emotionCache}>
         <ThemeProvider theme={theme}>
-            <CssBaseline/>
+            <CssBaseline />
             <AppProvider>
-                    <Component {...pageProps} />
+                <Component {...pageProps} />
                 <ToastContainer theme="colored" limit={3}/>
             </AppProvider>
         </ThemeProvider>

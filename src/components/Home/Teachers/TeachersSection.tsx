@@ -37,23 +37,23 @@ const TeachersSection = () => {
     const teachersData = [
         {
             url: 'pakal-docente.png',
-            name: 'Pakal Vega'
-        },
-        {
-            url: 'tao-docente.png',
-            name: 'Tao Vega'
+            name: 'Blue Phoenix'
         },
         {
             url: 'nico-docente.png',
             name: 'Nicolás Bava'
         },
         {
-            url: 'pakal-docente.png',
-            name: 'Pakal Vega'
+            url: 'tao-docente.png',
+            name: 'Taø Vega'
         },
         {
-            url: 'pakal-docente.png',
-            name: 'Pakal Vega'
+            url: 'orben-teacher.png',
+            name: 'Orben Allium'
+        },
+        {
+            url: 'andy-teacher.png',
+            name: 'Andy J.'
         }
     ]
 

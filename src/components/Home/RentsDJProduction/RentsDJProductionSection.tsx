@@ -57,7 +57,7 @@ const RentsDJProductionSection = () => {
                 <Box >
                     <motion.div
                         style={{
-                            position: isFixed ? "fixed" : "relative",
+                            position:  "fixed",
                             top: isFixed ? topValue : undefined,
                             left: 0,
                             right: 0,
@@ -76,8 +76,12 @@ const RentsDJProductionSection = () => {
                                         x: isXs ? undefined : x1,
                                         y: isXs ? y1 : undefined,
                                     }}
-
-                                    transition={{ ease: 'easeInOut' }}
+                                    transition={{
+                                        type: 'spring',
+                                        // stiffness: 1, // controls the bounciness (higher = stiffer)
+                                        // damping: 1,    // controls the resistance (higher = less oscillation)
+                                        // mass: 10,        // optional: affects inertia
+                                      }}
                                 >
                                     <RentsDJProductionComponent src={"/offonon/dj.png"} title={'DJ'} />
                                 </motion.div>
@@ -90,6 +94,9 @@ const RentsDJProductionSection = () => {
                                         y: isXs ? undefined : y1,
                                         x: isXs ? x1mobile : undefined
                                     }}
+                                    transition={{
+                                        type: 'spring',
+                                      }}
                                 >
                                     <RentsDJProductionComponent src={"/offonon/produccion.png"} title={'PRODUCCIÓN'} />
                                 </motion.div>
@@ -102,6 +109,9 @@ const RentsDJProductionSection = () => {
                                         opacity,
                                         x: x2
                                     }}
+                                    transition={{
+                                        type: 'spring',
+                                      }}
                                 >
                                     <RentsDJProductionComponent src={"/offonon/rentas.png"} title={'RENTAS'} />
                                 </motion.div>

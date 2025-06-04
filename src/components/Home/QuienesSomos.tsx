@@ -30,6 +30,7 @@ const QuienesSomos = () => {
                 top: isXs? "10%" : '30%',
                 filter: blur
             }}
+            transition={{type: 'easeInOut'}}
         >
 
             <Box 
