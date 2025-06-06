@@ -20,18 +20,20 @@ const Hero = () => {
   // Get scroll progress of the ref element
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start end', 'end start'], 
+    offset: ['start end', 'end start'],
   });
 
-const springConfig = {
-  stiffness: 80,
-  damping: 20,
-  mass: 1,
-};
+  const springConfig = {
+    stiffness: 80,
+    damping: 20,
+    mass: 1,
+  };
 
-  const opacity = useSpring(useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]));
+  const opacity = useSpring(useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]), springConfig);
   // const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
-  return (  
+
+
+  return (
     <>
       <Box
         sx={{
@@ -44,15 +46,15 @@ const springConfig = {
         }}
       >
         <StyledTitleContainer>
-          <Stack sx={{ display: 'flex', alignItems: 'center',position: 'fixed', right: 0, left: 0  }}>
+          <Stack sx={{ display: 'flex', alignItems: 'center', position: 'fixed', right: 0, left: 0 }}>
             <motion.div
               ref={ref}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
-              exit={{opacity: 0}}
+              exit={{ opacity: 0 }}
               style={{
-              // x: translateX,
+                // x: translateX,
                 opacity: opacity
               }}
             >
@@ -67,11 +69,11 @@ const springConfig = {
                 }}
               />
             </motion.div>
-            <Box sx={{ width: { xs: '80%', md: '60%' }, textAlign: 'center',}} >
+            <Box sx={{ width: { xs: '80%', md: '60%' }, textAlign: 'center', }} >
               <motion.div
                 initial={{ position: 'relative', top: '150px', opacity: 0 }}
                 whileInView={{ position: 'relative', top: '0px', opacity: 1 }}
-                transition={{delay: 0.1, duration: 0.5}}
+                transition={{ delay: 0.1, duration: 0.5 }}
                 style={{
                   opacity: opacity
                 }}

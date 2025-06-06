@@ -12,6 +12,7 @@ import theme from '@/styles/theme';
 import {EmotionCache} from "@emotion/cache";
 
 import AppProvider from "@/context/app";
+import { useLenis } from '@/hooks/useLenis';
 
 
 const clientSideEmotionCache = createEmotionCache();
@@ -21,6 +22,7 @@ export interface MyAppProps extends AppProps {
 }
 
 export default function App({Component, emotionCache = clientSideEmotionCache, pageProps}: MyAppProps) {
+      useLenis();
     return <CacheProvider value={emotionCache}>
         <ThemeProvider theme={theme}>
             <CssBaseline />
