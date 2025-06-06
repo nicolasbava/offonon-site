@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { Box, Grid2, useMediaQuery } from "@mui/material";
-import { StyledTitle, StyledTitleContainer } from "../components/Hero";
+import { StyledTitle, StyledTitleContainer } from "../components/atoms/Hero";
 import { styled, useTheme } from "@mui/material/styles";
 
 const Logo = styled("img")(() => ({

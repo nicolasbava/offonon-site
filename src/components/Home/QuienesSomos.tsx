@@ -1,9 +1,9 @@
 'use client'
 import { Box, Stack, Typography, useMediaQuery } from "@mui/material";
-import { DividerStyled } from "../Common";
+import { DividerStyled } from "../atoms/Common";
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from "react";
-import TextAnimation from "../Animations/TextAnimations";
+import TextAnimation from "../atoms/Animations/TextAnimations";
 import { useTheme } from "@mui/material/styles";
 
 const QuienesSomos = () => {
@@ -55,7 +55,7 @@ const QuienesSomos = () => {
                     </Stack>
 
                     <Box>
-                        <Typography mt={2}>En OffOnOn te ayudamos a llevar tu música al siguiente nivel. Aprende a producir, mezclar y masterizar con calidad profesional. Finaliza tus tracks listos para ser firmados por sellos internacionales y adquiere conocimientos clave sobre derechos de autor y monetización para vivir de tu pasión. Conéctate con profesionales activos en la industria y accede a recursos exclusivos para potenciar tu conocimiento.</Typography>
+                        <Typography mt={2}>En OffOnOn te ayudamos a llevar tu música al siguiente nivel. Aprende a producir, mezclar y masterizar con calidad profesional. Finaliza tus tracks listos para ser firmados por sellos nacionales e internacionales y adquiere conocimientos clave sobre derechos de autor y monetización para vivir de tu pasión. Conéctate con profesionales activos en la industria y accede a recursos exclusivos para potenciar tu conocimiento.</Typography>
                         <Typography mt={2}>Forma parte de nuestra comunidad, comparte tus proyectos y recibe retroalimentación para mejorar. Además obtén oportunidades para conseguir tus primeros gigs y lanzar tu música con éxito. Únete ahora y has que la música hable por ti.</Typography>
                         {/* <TextAnimation text={"En OffOnOn te ayudamos a llevar tu música al siguiente nivel. Aprende a producir, mezclar y masterizar con calidad profesional. Finaliza tus tracks listos para ser firmados por sellos internacionales y adquiere conocimientos clave sobre derechos de autor y monetización para vivir de tu pasión. Conéctate con profesionales activos en la industria y accede a recursos exclusivos para potenciar tu conocimiento."} /> */}
                         {/* <TextAnimation text={"Forma parte de nuestra comunidad, comparte tus proyectos y recibe retroalimentación para mejorar. Además obtén oportunidades para conseguir tus primeros gigs y lanzar tu música con éxito. Únete ahora y has que la música hable por ti."} /> */}

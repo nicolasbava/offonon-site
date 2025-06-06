@@ -3,7 +3,7 @@ import {AppBarProps} from '@mui/material/AppBar';
 import Slide from '@mui/material/Slide';
 import Link from 'next/link';
 
-import Logo from "@/components/Logo";
+import Logo from "@/components/atoms/Logo";
 import StyledAppBar from "@/components/Layout/Header/StyledAppBar";
 import Stack from "@mui/material/Stack";
 import HeaderLinks from "@/components/Layout/Header/HeaderLinks";

@@ -1,6 +1,6 @@
 import { Box, Button, Divider, Grid2, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { DividerStyled } from "@/components/Common";
+import { DividerStyled } from "@/components/atoms/Common";
 import TeacherComponent from "./TeacherComponent";
 
 const Logo = styled("img")(() => ({

@@ -2,7 +2,7 @@
 import { Box, Grid2 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import RentsDJProductionComponent from "./RentsDJProductionComponent";
-import { motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion';
+import { motion, useMotionValueEvent, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useRef, useState } from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
 
@@ -42,12 +42,18 @@ const RentsDJProductionSection = () => {
     const isXs = useMediaQuery(theme.breakpoints.only('xs'));
 
     const topValue = isXs ? '3%' : '30%';
-    const opacity = useTransform(scrollY, [726, 1200, 1800], [0, 1, 0]);
+    const springConfig = {
+        stiffness: 80,
+        damping: 20,
+        mass: 1,
+    };
+
+    const x1 = useSpring(useTransform(scrollY, [1100, 1500], [0, -650]), springConfig);
+    const x1mobile = useSpring(useTransform(scrollY, [1100, 1500], [0, -650]), springConfig);
+    const x2 = useSpring(useTransform(scrollY, [1100, 1500], [0, 650]), springConfig);
+    const y1 = useSpring(useTransform(scrollY, [1100, 1500], [0, -650]), springConfig);
+    const opacity = useSpring(useTransform(scrollY, [726, 1200, 1800], [0, 1, 0]), springConfig);
     const display = useTransform(scrollYProgress, [0, 1.5], ['block', 'none']);
-    const x1 = useTransform(scrollY, [1100, 1500], [0, -650]);
-    const x1mobile = useTransform(scrollY, [1100, 1500], [0, -650]);
-    const x2 = useTransform(scrollY, [1100, 1500], [0, 650]);
-    const y1 = useTransform(scrollY, [1100, 1500], [0, -650]);
 
 
     return (
@@ -57,7 +63,7 @@ const RentsDJProductionSection = () => {
                 <Box >
                     <motion.div
                         style={{
-                            position:  "fixed",
+                            position: "fixed",
                             top: isFixed ? topValue : undefined,
                             left: 0,
                             right: 0,
@@ -78,12 +84,9 @@ const RentsDJProductionSection = () => {
                                     }}
                                     transition={{
                                         type: 'spring',
-                                        // stiffness: 1, // controls the bounciness (higher = stiffer)
-                                        // damping: 1,    // controls the resistance (higher = less oscillation)
-                                        // mass: 10,        // optional: affects inertia
-                                      }}
+                                    }}
                                 >
-                                    <RentsDJProductionComponent src={"/offonon/dj.png"} title={'DJ'} />
+                                    <RentsDJProductionComponent src={"/offonon/dj.png"} title={'CURSOS'} />
                                 </motion.div>
                             </Grid2>
                             <Grid2 size={{ xs: 12, md: 4 }} sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -96,9 +99,9 @@ const RentsDJProductionSection = () => {
                                     }}
                                     transition={{
                                         type: 'spring',
-                                      }}
+                                    }}
                                 >
-                                    <RentsDJProductionComponent src={"/offonon/produccion.png"} title={'PRODUCCIÓN'} />
+                                    <RentsDJProductionComponent src={"/offonon/produccion.png"} title={'SERVICIOS'} />
                                 </motion.div>
 
                             </Grid2>
@@ -111,9 +114,9 @@ const RentsDJProductionSection = () => {
                                     }}
                                     transition={{
                                         type: 'spring',
-                                      }}
+                                    }}
                                 >
-                                    <RentsDJProductionComponent src={"/offonon/rentas.png"} title={'RENTAS'} />
+                                    <RentsDJProductionComponent src={"/offonon/rentas.png"} title={'RENTA PARA TU EVENTO'} />
                                 </motion.div>
 
                             </Grid2>

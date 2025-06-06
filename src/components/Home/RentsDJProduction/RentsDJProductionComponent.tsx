@@ -46,11 +46,14 @@ const RentsDJProductionComponent = ({src,title}: {src: string, title: string}) =
             <Typography sx={{
                 position: 'absolute',
                 textAlign: 'center',
-                top: '39%',
+                // top: '39%',
                 fontSize: '32px',
                 fontWeight: 'bold',
                 left: '0px',
                 right: '0px',
+                top: '32%',
+                // bottom: 0,
+                // transform: 'translateY(50%)',
                 textShadow: '2px 2px 0px black',
                 transition: '250ms all ease',
             }}>{title}</Typography>

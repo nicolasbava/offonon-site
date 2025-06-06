@@ -2,8 +2,8 @@
 
 import { Box, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { StyledTitleContainer } from "../Hero";
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { StyledTitleContainer } from "../atoms/Hero";
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useRef } from "react";
 const Logo = styled("img")(({ theme }) => ({
   maxWidth: "250px",
@@ -23,7 +23,13 @@ const Hero = () => {
     offset: ['start end', 'end start'], 
   });
 
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
+const springConfig = {
+  stiffness: 80,
+  damping: 20,
+  mass: 1,
+};
+
+  const opacity = useSpring(useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]));
   // const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
   return (  
     <>

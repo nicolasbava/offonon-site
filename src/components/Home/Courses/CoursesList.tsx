@@ -1,6 +1,6 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { DividerStyled } from "@/components/Common";
+import { DividerStyled } from "@/components/atoms/Common";
 import Link from "next/link";
 
 const Logo = styled("img")(() => ({

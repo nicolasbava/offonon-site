@@ -6,9 +6,9 @@ import Link from "next/link";
 import Divider from "@mui/material/Divider";
 import StyledFooterContainer from "@/components/Layout/Footer/StyledFooterContainer";
 import StyledFooterSection from "@/components/Layout/Footer/StyledFooterSection";
-import { LogoFooter } from "@/components/Logo";
+import { LogoFooter } from "@/components/atoms/Logo";
 // import StyledTitleElement from '@/components/StyledTitleElement';
-import StyledWhatsappAnchor from "@/components/StyledWhatsappAnchor";
+import StyledWhatsappAnchor from "@/components/atoms/StyledWhatsappAnchor";
 import FooterMap from "./FooterMap";
 
 const ImageElement = styled("img")(() => ({}));
