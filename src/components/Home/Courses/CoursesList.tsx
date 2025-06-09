@@ -10,7 +10,7 @@ const Logo = styled("img")(() => ({
 const CoursesList = ({name, link}: {name:string, link:string}) => {
     
     return ( 
-        <Stack sx={{maxWidth: {xs:'100%', md: '80%'}, margin: 'auto', textAlign: 'center', marginBlock: 2, }}>
+        <Stack sx={{maxWidth: {xs:'100%', md: '80%'}, margin: 'auto', textAlign: 'center', marginBlock: 6, }}>
             <Stack direction='row' alignItems='center' spacing={0} sx={{mb: 2}}>
                 <Logo
                 src={"/offonon/waves.png"}
@@ -21,14 +21,14 @@ const CoursesList = ({name, link}: {name:string, link:string}) => {
                 }}
                 />
                 <Box sx={{textAlign: 'left'}}>
-                    <Typography sx={{fontSize: {xs:'18px' ,md:'24px'}, fontWeight: 'bold'}}>{name}</Typography>
+                    <Typography sx={{fontSize: {xs:'18px' ,md:'24px'}, fontWeight: 'bold', maxWidth: '300px'}}>{name}</Typography>
                     {/* <Typography sx={{fontSize: '24px', fontWeight: 'bold'}}>PRESENCIAL NORMAL</Typography> */}
                 </Box>
+                <Link href={link} style={{marginLeft: 'auto'}}>
+                    <Button variant='contained' sx={{width: 'fit-content', marginLeft: 'auto', mt: 0}}>MÁS INFO</Button>
+                </Link>
             </Stack>
             <DividerStyled   />
-            <Link href={link} style={{marginLeft: 'auto'}}>
-                <Button variant='contained' sx={{width: 'fit-content', marginLeft: 'auto', mt: 2}}>MÁS INFO</Button>
-            </Link>
         </Stack>
     )
 };

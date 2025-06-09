@@ -69,7 +69,8 @@ const RentsDJProductionSection = () => {
                             right: 0,
                             width: "100%",
                             overflow: 'hidden',
-                            display: display
+                            // display: display,
+                            background: '#1d1923',
                         }}
                         ref={ref}
                     >

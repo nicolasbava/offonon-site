@@ -6,8 +6,8 @@ import HomeCourses from "@/components/Home/Courses/HomeCourses";
 import RentsDJProductionSection from "@/components/Home/RentsDJProduction/RentsDJProductionSection";
 import TeachersSection from "@/components/Home/Teachers/TeachersSection";
 import FinalBanner from "@/components/Home/FinalBanner";
-import RegisterSection from "@/components/Home/Register";
 import Layout from "@/components/Layout";
+import HomeServices from "@/components/Home/Services/HomeServices";
 
 const HomePage = () => {
 
@@ -20,7 +20,8 @@ const HomePage = () => {
       <Discounts />
       <HomeCourses />
       <TeachersSection />
-      <RegisterSection />
+      <HomeServices />
+      {/* <RegisterSection /> */}
       <FinalBanner />
     </Layout>
    

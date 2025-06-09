@@ -1,11 +1,11 @@
-import { Box, Button, Divider, Grid2, Stack, Typography } from "@mui/material";
+import { Box, Button, Grid2, Stack, Typography } from "@mui/material";
 
 
 const Promotion = () => {
     
     return (
     <>
-        <Box sx={{position: 'relative', zIndex: 9,}}>
+        <Box sx={{position: 'relative', zIndex: 99,}}>
             <Grid2 container>
                 <Grid2  
                     size={{xs: 12, md: 6}} 

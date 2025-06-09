@@ -16,13 +16,33 @@ const ImageCourses = styled("img")(({ theme }) => ({
 
 const infoCourses = [
     {
-        title: 'Producción Musical',
+        title: 'Producción Musical Grupal',
         link: '/courses/music-production'
     },
     {
-        title: 'Curso DJ Inicial',
+        title: 'Curso de DJ',
         link: '/courses/dj'
-    }
+    },
+    {
+        title: 'Curso de Mix/Master',
+        link: '/courses/mix-fundamentals'
+    },
+    {
+        title: 'Clases Personalizadas',
+        link: '/courses/melodic-production'
+    },
+    {
+        title: 'Mentorías Privadas (por hora)',
+        link: '/courses/dj'
+    },
+    {
+        title: 'Curso de Touchdesigner',
+        link: '/courses/dj'
+    },
+    {
+        title: 'Curso de Experiencias Inmersivas',
+        link: '/courses/dj'
+    },
 ]
 
 const HomeCourses = () => {

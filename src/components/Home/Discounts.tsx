@@ -1,5 +1,5 @@
 'use client'
-import { Box, Button, Divider, Grid2, Stack, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
@@ -31,13 +31,15 @@ const Discounts = () => {
                 transition={{ delay: 0.5, duration: 2, ease: 'easeInOut' }}
                 style={{
                     filter: blur,
-                    // position: position,
+                    position: 'relative',
+                    zIndex: 9,
                     top: '10%',
                     marginTop: '-2px',
-                    width: '100%'
+                    width: '100%',
+                    background: '#1d1923'
                 }}
             >
-                <Box ref={ref} sx={{ paddingInline:{xs: 8, md: 12}, margin: 'auto', textAlign: 'center', paddingBlock: 44, top: 0, zIndex: 99, background: '#1d1923' }}>
+                <Box ref={ref} sx={{ paddingInline:{xs: 8, md: 12}, margin: 'auto', textAlign: 'center', position: 'relative', paddingBlock: 44, top: 0, zIndex: 99, background: '#1d1923' }}>
                     <Typography sx={{ fontSize: {xs: '18px', md:'24px'}, mb: 2 }}>También contamos con descuentos en las siguientes marcas:</Typography>
                     <Typography sx={{ fontSize:{xs: '28px', md: '32px',  lg:'46px'}, fontWeight: '600' }}>Adam | Novation | Scarlett | Ableton</Typography>
                 </Box>

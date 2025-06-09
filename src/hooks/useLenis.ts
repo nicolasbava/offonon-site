@@ -1,11 +1,11 @@
 // hooks/useLenis.ts
+'use client'
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis';
 
 export const useLenis = () => {
   useEffect(() => {
     const lenis = new Lenis({
-    //   smooth: true,
       lerp: 0.08, // menor = más suave (0.05–0.1 es ideal)
     });
 
