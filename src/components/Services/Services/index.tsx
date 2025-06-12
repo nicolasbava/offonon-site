@@ -7,7 +7,7 @@ import { Course } from "@/types/courses";
 import GroupScheduleTable from "./CoursesCalendar";
 import CourseDetail2 from "./CourseDetail2";
 
-const CourseInformation = ({data} : {data: Course[]}) => {
+const ServiceInformation = ({data} : {data: Course[]}) => {
     const groupData = [
         {
           name: 'Grupo 1 Matutino',
@@ -83,4 +83,4 @@ const CourseInformation = ({data} : {data: Course[]}) => {
     )
 };
 
-export default CourseInformation;
+export default ServiceInformation;

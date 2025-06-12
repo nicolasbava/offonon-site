@@ -1,7 +1,7 @@
 'use client'
-import CourseInformation from "@/components/Courses/CourseInformation";
-import HeroImageCourses from "@/components/Courses/HeroImage";
+import HeroImageCourses from "@/components/Services/HeroImage";
 import Layout from "@/components/Layout";
+import ServiceInformation from "@/components/Services/Services";
 import { Course } from "@/types/courses";
 
  
@@ -108,13 +108,15 @@ const coursesData : Course[] = [
     },
 ]
 
-const Courses = () => {
+const Services = () => {
     return (
         <Layout>
             <HeroImageCourses />
-            <CourseInformation data={coursesData}  />
+            <ServiceInformation data={coursesData}  />
+
+            SERVICESSSS
         </Layout>
     )
 };
 
-export default Courses
+export default Services

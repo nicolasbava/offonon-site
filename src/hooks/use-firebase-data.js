@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { initializeApp } from "firebase/app";
 // import { EventsArrayProps } from '@/types/events';
-// import { CoursesArrayProps } from '@/types/courses';
 
 import {
   fetchAndActivate,

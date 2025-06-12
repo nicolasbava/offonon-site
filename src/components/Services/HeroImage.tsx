@@ -30,7 +30,7 @@ const HeroImageCourses = () => {
                     width: {xs:'auto', md: '28%'},
                     textShadow: '8px 8px 0px black',
                     textAlign:{xs: 'center', md: 'left'}
-                }} >Nuestros cursos</Typography>
+                }} >Nuestros Servicios</Typography>
                 <Logo
                     src={"/offonon/offonon-logo2.png"}
                     alt="alt1"

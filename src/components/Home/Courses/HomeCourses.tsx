@@ -11,6 +11,9 @@ const ImageCourses = styled("img")(({ theme }) => ({
     // maxHeight: '80vh',
     [theme.breakpoints.up('md')]: {
         maxWidth: "35vw",
+    },
+    [theme.breakpoints.up('lg')]: {
+        maxWidth: "40vw",
     }
 }));
 
@@ -25,23 +28,23 @@ const infoCourses = [
     },
     {
         title: 'Curso de Mix/Master',
-        link: '/courses/mix-fundamentals'
+        link: '/courses/mix-master'
     },
     {
         title: 'Clases Personalizadas',
-        link: '/courses/melodic-production'
+        link: '/courses/personalized-classes'
     },
     {
         title: 'Mentorías Privadas (por hora)',
-        link: '/courses/dj'
+        link: '/courses/private-mentoring'      
     },
     {
         title: 'Curso de Touchdesigner',
-        link: '/courses/dj'
+        link: '/courses/touchdesigner'
     },
     {
         title: 'Curso de Experiencias Inmersivas',
-        link: '/courses/dj'
+        link: '/courses/immersive-experiences'
     },
 ]
 

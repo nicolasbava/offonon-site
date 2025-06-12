@@ -2,7 +2,7 @@ import { Course } from "@/types/courses";
 import { Box, Grid2, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-const CourseStructure = ({ data } : {data: Course[]}) => {
+const CourseStructure = ({ data } : {data: Course}) => {
 
     const CourseImg = styled("img")(({ theme }) => ({
         maxWidth: "290px",
@@ -28,7 +28,7 @@ const CourseStructure = ({ data } : {data: Course[]}) => {
                     alt="alt1"
                     loading="lazy"
                 />
-                <Typography sx={{position: 'absolute', top: '40%', left: '0', right: '0', fontSize: '26px', fontWeight: 'bold', textShadow: '2px 2px 0px black', width: {xs: '60%',md:'45%'}, margin: 'auto'}}>PRODUCCIÓN MUSICAL</Typography>
+                <Typography sx={{position: 'absolute', top: '40%', left: '0', right: '0', fontSize: '26px', fontWeight: 'bold', textShadow: '2px 2px 0px black', width: {xs: '60%',md:'45%'}, margin: 'auto', textTransform: 'uppercase'}}>{data.name}</Typography>
             </Box>
 
             {/* <Grid2 container sx={{width: {xs: '100%', md:'80%'}, margin: 'auto', mt: 4}}>
