@@ -18,7 +18,7 @@ const Hero = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   // Get scroll progress of the ref element
-  const { scrollYProgress } = useScroll({
+  const { scrollY } = useScroll({
     target: ref,
     offset: ['start end', 'end start'],
   });
@@ -29,7 +29,7 @@ const Hero = () => {
     mass: 1,
   };
 
-  const opacity = useSpring(useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]), springConfig);
+  const opacity = useTransform(scrollY, [0, 640], [1, 0]);
   // const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
 
 
@@ -52,7 +52,6 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
-              exit={{ opacity: 0 }}
               style={{
                 // x: translateX,
                 opacity: opacity

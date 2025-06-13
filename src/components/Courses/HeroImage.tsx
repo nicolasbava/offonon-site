@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-const HeroImageCourses = () => {
+const HeroImageCourses = ({name}: {name:string}) => {
 
     const Logo = styled("img")(({ theme }) => ({
         maxWidth: "250px",
@@ -22,15 +22,15 @@ const HeroImageCourses = () => {
                 backgroundAttachment: 'fixed'
             }}
         >
-            <Stack sx={{ pt: 22, flexDirection: { xs: 'column', md: 'row' }, alignItems:'center', justifyContent:'space-around', position: 'fixed', zIndex: 0, width: '100%' }}>
+            <Stack sx={{ pt: 22, flexDirection: { xs: 'column', md: 'row' }, alignItems:'center', justifyContent:'space-evenly', position: 'fixed', zIndex: 0, width: '100%' }}>
                 <Typography  sx={{
                     textTransform: 'uppercase',
                     fontWeight: 'bold',
-                    fontSize: {xs:'22px',md:'64px', lg:'82px'},
-                    width: {xs:'auto', md: '28%'},
+                    fontSize: {xs:'22px',md:'64px', lg:'64px'},
+                    width: {xs:'auto', md: '42%'},
                     textShadow: '8px 8px 0px black',
                     textAlign:{xs: 'center', md: 'left'}
-                }} >Nuestros cursos</Typography>
+                }} >{name}</Typography>
                 <Logo
                     src={"/offonon/offonon-logo2.png"}
                     alt="alt1"

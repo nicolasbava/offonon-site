@@ -6,8 +6,8 @@ const CourseDetail = ({data} : {data: Course}) => {
 
     return (
         <Box sx={{margin: 'auto',  display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }} >
-            SERVICES
-            {/* <Typography mt={2} variant='h3' fontWeight={'bold'}>{data.name}</Typography>
+            {/* SERVICES */}
+            <Typography mt={2} variant='h3' fontWeight={'bold'}>{data.name}</Typography>
             <Typography mt={2} sx={{fontSize: '20px'}}>{data.intro}</Typography>
             {
                 data.detail && <Typography mt={2}>{data.detail}</Typography>
@@ -18,7 +18,7 @@ const CourseDetail = ({data} : {data: Course}) => {
                         {ele}
                     </Typography>
                 ))} 
-            </Typography>*/}
+            </Typography>
 
         </Box>
     )

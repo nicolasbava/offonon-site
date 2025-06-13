@@ -115,7 +115,7 @@ const Courses = () => {
   if (typeof slug !== 'string') {
     return (
       <Layout>
-        <HeroImageCourses />
+        <HeroImageCourses name={'cursos'} />
         <div className="py-12 text-center text-lg">Cargando curso...</div>
       </Layout>
     );
@@ -127,7 +127,7 @@ const Courses = () => {
   if (!course) {
     return (
       <Layout>
-        <HeroImageCourses />
+        <HeroImageCourses name={'cursos'} />
         <div className="py-12 text-center text-lg text-red-500">
           El curso que estás buscando no fue encontrado.
         </div>
@@ -138,7 +138,7 @@ const Courses = () => {
   // Curso encontrado
   return (
     <Layout>
-      <HeroImageCourses />
+      <HeroImageCourses name={course.name} />
       <CourseInformation data={course} />
     </Layout>
   );

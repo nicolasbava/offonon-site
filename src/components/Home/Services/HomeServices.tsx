@@ -14,22 +14,22 @@ const ImageCourses = styled("img")(({ theme }) => ({
     }
 }));
 
-const infoCourses = [
+const infoServices = [
+    {
+        title: 'Renta de Cabina Profesional',
+        link: '/services/dj-booth'
+    },
     {
         title: 'Sesión de Fotos Profesionales',
-        link: '/courses/music-production'
+        link: '/services/photos'
     },
     {
         title: 'Presskit + Bio + Página Web',
-        link: '/courses/dj'
+        link: '/services/presskit-bio-web'
     },
     {
-        title: 'Servicio de Mezcla y Masterización.',
-        link: '/courses/mix-fundamentals'
-    },
-    {
-        title: 'Escaneo 3D para Avatar o Visuales',
-        link: '/courses/melodic-production'
+        title: 'Servicio de mezcla y master',
+        link: '/services/mix-master'
     }
 ]
 
@@ -43,12 +43,12 @@ const HomeServices = () => {
             </Stack>
             <Grid2 container direction='row' rowGap={4} >
                     <Grid2 size={{ xs: 12, md: 6 }}>
-                    {infoCourses.slice(0, Math.round(infoCourses.length / 2 )).map(ele => (
+                    {infoServices.slice(0, Math.round(infoServices.length / 2 )).map(ele => (
                         <ServicesList key={ele.title}  name={ele.title} link={ele.link} />
                     ))}
                     </Grid2>
                      <Grid2 size={{ xs: 12, md: 6 }} >
-                    {infoCourses.slice(Math.round(infoCourses.length / 2 )).map(ele => (
+                    {infoServices.slice(Math.round(infoServices.length / 2 )).map(ele => (
                         <ServicesList key={ele.title}  name={ele.title} link={ele.link} />
                     ))}
                     </Grid2>

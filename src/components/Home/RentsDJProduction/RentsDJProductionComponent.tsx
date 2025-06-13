@@ -47,7 +47,7 @@ const RentsDJProductionComponent = ({src,title}: {src: string, title: string}) =
                 position: 'absolute',
                 textAlign: 'center',
                 // top: '39%',
-                fontSize: '32px',
+                fontSize: {xs: '20px', lg: '32px'},
                 fontWeight: 'bold',
                 left: '0px',
                 right: '0px',

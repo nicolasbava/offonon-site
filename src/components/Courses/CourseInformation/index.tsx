@@ -22,18 +22,19 @@ const CourseInformation = ({data} : {data: Course}) => {
             <Grid2 container spacing={0} sx={{
                 maxWidth: {xs: '90%',  lg: '70%'},
                 margin: 'auto',
-                paddingTop: {xs:12, md:35},
+                // paddingTop: {xs:12, md:35},
+                paddingTop: 10,
                 marginBottom: 8,
             }}>
-                <Grid2 
+                {/* <Grid2 
                     size={{ xs: 12, md: 6 }} 
                 >
                     <CourseStructure data={data} />
 
                     
-                </Grid2>
+                </Grid2> */}
                 <Grid2 
-                    size={{ xs: 12, md: 6 }}
+                    size={{ xs: 12, md: 12 }}
                 >
                     <CourseDetail data={data} />
                 </Grid2>

@@ -2,119 +2,148 @@
 import HeroImageCourses from "@/components/Services/HeroImage";
 import Layout from "@/components/Layout";
 import ServiceInformation from "@/components/Services/Services";
-import { Course } from "@/types/courses";
+import { ServiceI } from "@/types/services";
+import { useRouter } from "next/router";
 
  
-
-const coursesData : Course[] = [
+const servicesData : ServiceI[] = [
     {
-        link: 'music-production',
-        duration: '2 meses (16 clases de 2hs cada una)',
-        format: 'Clases en vivo + MasterClass + Material Complementario (PDFs, videos, tutoriales, documentales)',
-        recordings: 'Todas las sesiones quedan grabadas para repaso.',
-        discount: '50% en todas nuestras actividades',
-        name: 'Taller Pioneer DJ',
-        detail: 'Descubre el poder de la producción musical y lleva tu creatividad al siguiente nivel. Nuestro curso te brinda una formación completa en Ableton Live, síntesis, lenguaje musical y creación de Tracks, con un enfoque práctico y adaptado a tus necesidades.',
-        cadence: '1 clase por semana por materia',
-        supportSession: 'Sábados a las 12:00pm.',
+        link: 'dj-booth',
+        title: 'Renta de Cabina Profesional',
+        description: 'En OFFONON te ofrecemos una experiencia completa en cabina, equipada con CDJ 3000 + Mixer DJM-750MK2, en un entorno pensado para que tu música suene y luzca increíble.',
+        title_structure: '¿Qué incluye la renta?',
         structure: [
-            {
-                name: 'Ableton Live 1 y 2',
-                duration: '16 sesiones',
-                description: [
-                    'Dominar el uso de Ableton Live como plataforma principal para la producción de música electrónica.',
-                    'Comprender y aplicar conceptos fundamentales de audio digital, MIDI y estructura de canales.',
-                    'Crear y programar bases rítmicas, líneas de bajo y secuencias melódicas usando instrumentos nativos y plugins externos.',
-                    'Utilizar efectos, automatizaciones, envíos y retornos para dar profundidad y dinámica a las producciones.',
-                    'Integrar escalas, acordes y estructuras musicales en la creación de tracks completos.',
-                    'Usar procesadores MIDI y moduladores creativamente para enriquecer la expresión musical.',
-                    'Preparar y presentar proyectos musicales completos con un enfoque profesional en la producción electrónica.',
-
-                ]
-            },
-            {
-                name: 'Sintesis 1 y 2',
-                duration: '16 sesiones',
-                description: [ 
-                    'Comprender la historia, fundamentos y tipos de síntesis sonora utilizados en la música electrónica.',
-                    'Identificar y operar las partes de un sintetizador (generadores, filtros, moduladores, envolventes, etc.).',
-                    'Dominar diferentes técnicas de síntesis: sustractiva, aditiva, wavetable, FM, granular y modelado físico.',
-                    'Aplicar conocimientos de síntesis al diseño de sonidos específicos: baterías, bajos, leads, pads, fx y atmósferas.',
-                    'Desarrollar habilidades para manipular vocales mediante vocoders y formantes.',
-                    'Explorar técnicas de grabación, edición y procesamiento de audio para crear timbres únicos y expresivos.',
-                    'Integrar diseño sonoro con herramientas digitales para la producción musical profesional.'
-                ]
-            },
-            {
-                name: 'Lenguaje Musical 1 y 2',
-                duration: '16 sesiones',
-                description: [
-                    'Comprender los elementos básicos del lenguaje musical (ritmo, armonía, melodía) aplicados a la música electrónica.',
-                    'Dominar escalas, acordes e intervalos para crear armonías y melodías efectivas.',
-                    'Aplicar el compás 4/4 y estructuras rítmicas en la producción de beats.',
-                    'Usar herramientas como el cifrado inglés y el círculo de quintas para componer y transponer.',
-                    'Entender la estructura de un track electrónico y desarrollar habilidades de composición y arreglo.',
-                    'Traducir conceptos teóricos en ideas musicales usando herramientas digitales.'
-                ]
-            },
-            {
-                name: 'Sesiones de Dudas y Preguntas',
-                duration: '4 sesiones',
-                // description: [
-                //     'Se abrira'
-                // ]
-            },
-            {
-                name: 'Creación de un Track desde Cero',
-                duration: '4 sesiones'
-            },
+            'Acceso a quien renta, 2 horas de uso exclusivo de la cabina OFFONON más un acompañante. (Acompañante extra tiene un costo de $150.)',
+            'CDJ 3000 + DJM 750MK2, completamente calibrados',
+            'Grabación de audio profesional del set (WAV o MP3)',
+            'Grabación de video en HD desde 1 o 2 ángulos fijos',
+            'Ambiente tratado acústicamente y visualmente atractivo',
+            'Asistencia técnica básica durante la sesión'
         ],
+        outro: [
+            'Disponible bajo reservación previa (mínimo 48 hrs)',
+            'Agrega servicio de edición de video, color, subtítulos o reels con costo adicional.'
+        ]
     },
     {
-        link: 'pioneer-dj',
-        name: 'DJ',
-        detail: 'Descubre el poder de la producción musical y lleva tu creatividad al siguiente nivel. Nuestro curso te brinda una formación completa en Ableton Live, síntesis, lenguaje musical y creación de Tracks, con un enfoque práctico y adaptado a tus necesidades.',
-        duration: '4 meses (56 clases de 2hs c/u)',
-        format: 'Clases en vivo + MasterClass + Material Complementario (PDFs, videos, tutoriales, documentales)',
-        recordings: 'Todas las sesiones quedan grabadas para repaso.',
-        discount: '50% en MasterClass',
-        cadence: '1 clase por semana por materia',
-        supportSession: 'Sábados a las 12:00pm.',
+        link: 'photos',
+        title: 'Sesión de Fotos Profesional ',
+        description: 'En OFFONON te ofrecemos una experiencia completa en cabina, equipada con CDJ 3000 + Mixer DJM-750MK2, en un entorno pensado para que tu música suene y luzca increíble.',
         structure: [
+            'Fotografía en estudio OFFONON con iluminación profesional.',
+            'Sesión de 50 fotos.',
+            'Entrega de 25 fotos editadas.',
+            'Incluye contenido en crudo.'
+        ]
+    },
+    {
+        link: 'presskit-bio-web',
+        title: 'Presskit + Bio + Página Web',
+        description: 'En OFFONON te ofrecemos una experiencia completa en cabina, equipada con CDJ 3000 + Mixer DJM-750MK2, en un entorno pensado para que tu música suene y luzca increíble.',
+        structure: [
+            'Diseño de presskit profesional (PDF + versión web).',
+            'Redacción de biografía artística.',
+            'Hosting y diseño one-page personalizado.',
+        ]
+    },
+    {
+        link: 'mix-master',
+        title: 'Servicio de Mezcla y Master',
+        description: 'Servicio de Mezcla y Master',
+        sub_service: [
             {
-                name: 'Ableton Live 1 y 2',
-                duration: '16 sesiones',
+                title: 'Mixdown',
                 description: [
-                    'Aplicar '
+                    {
+                        price: '$1,000 MX',
+                        stems: 'Up to 15 stems',
+                    },
+                    {
+                        price: '$1,500 MX',
+                        stems: '15 to 30 stems',
+                    },
+                    {
+                        price: '$2,000 MX',
+                        stems: '31 to 45 stems',
+                    },
+                    {
+                        price: '$2,500 MX',
+                        stems: '+ than 45 stems',
+                    },
+                ]
+
+            },
+            {
+                title: 'Mastering',
+                description: [
+                    {
+                        price: '$700 MX',
+                        stems: 'Stereo Mastering',
+                    },
                 ]
             },
             {
-                name: 'Síntesis 1 y 2',
-                duration: '16 sesiones'
-            },
-            {
-                name: 'Lenguaje Musical 1 y 2',
-                duration: '16 sesiones'
-            },
-            {
-                name: 'Sesiones de Dudas y Preguntas',
-                duration: '4 sesiones'
-            },
-            {
-                name: 'Creación de un Track desde Cero',
-                duration: '4 sesiones'
-            },
-        ],
-    },
+                title: 'Mixdown & Mastering',
+                description: [
+                    {
+                        price: '$1,500 MX',
+                        stems: 'Up to 15 stems',
+                    },
+                    {
+                        price: '$2,000 MX',
+                        stems: '16 to 30 stems',
+                    },
+                    {
+                        price: '$2,500 MX',
+                        stems: '31 to 45 stems',
+                    },
+                    {
+                        price: '$3,000 MX',
+                        stems: '+ than 45 stems',
+                    },
+                ]
+            }
+        ]
+    }
 ]
 
 const Services = () => {
+    const router = useRouter();
+    const {slug} = router.query;
+
+    if (typeof slug !== 'string') {
+        return (
+        <Layout>
+            <HeroImageCourses name={'cursos'} />
+            <div className="py-12 text-center text-lg">Cargando curso...</div>
+        </Layout>
+        );
+    }
+    
+    const getCourseBySlug = (slug: string): ServiceI | undefined =>{
+      return servicesData.find(course => course.link === slug);
+    }
+
+    const service = getCourseBySlug(slug);
+    if (!service) {
+        return (
+        <Layout>
+            <HeroImageCourses name={'Servicios'} />
+            <div className="py-12 text-center text-lg text-red-500">
+            El curso que estás buscando no fue encontrado.
+            </div>
+        </Layout>
+        );
+    }
+
+
     return (
         <Layout>
-            <HeroImageCourses />
-            <ServiceInformation data={coursesData}  />
+            <HeroImageCourses name={service.title} />
+            {service ? 
+                <ServiceInformation data={service}  />
+            : 'NO ENCONTRO SERVICIO' }
 
-            SERVICESSSS
         </Layout>
     )
 };
