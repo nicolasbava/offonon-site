@@ -1,10 +1,9 @@
-import { Box, Grid2, Stack } from "@mui/material";
+import { Box, Button, Grid2 } from "@mui/material";
 import { SuperiorShadow } from "../../Home/RentsDJProduction/RentsDJProductionSection";
-import CourseStructure from "./CourseStructure";
 import CourseDetail from "./CourseDetail";
 import { Course } from "@/types/courses";
 import SubCourseDetail from "./SubCourseDetail";
-
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 const CourseInformation = ({data} : {data: Course}) => {
  
     return (
@@ -36,6 +35,14 @@ const CourseInformation = ({data} : {data: Course}) => {
                 <Grid2 
                     size={{ xs: 12, md: 12 }}
                 >
+                    <Button variant='text' href='/home#courses'>
+                        <ArrowBackIcon sx={{fontSize: '20px', mr: '4px'}} />
+                        Atrás
+                    </Button>
+                </Grid2>
+                <Grid2 
+                    size={{ xs: 12, md: 12 }}
+                >
                     <CourseDetail data={data} />
                 </Grid2>
                 <Grid2 size={{ xs: 12, md: 12 }} sx={{mt: 4, pl: 6
@@ -47,6 +54,13 @@ const CourseInformation = ({data} : {data: Course}) => {
                             <SubCourseDetail key={key} data={ele} />
                         ))
                     }
+                </Grid2>
+
+                <Grid2 
+                    size={{ xs: 12, md: 12 }}
+                    mt={2}
+                >
+                    <Button variant='contained'>¡QUIERO INSCRIBIRME!</Button>
                 </Grid2>
             </Grid2>
         </Box>

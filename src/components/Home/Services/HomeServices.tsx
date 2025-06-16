@@ -36,7 +36,7 @@ const infoServices = [
 const HomeServices = () => {
 
     return (
-        <Box id='courses' sx={{ paddingInline:{xs: 2, md: 12 }, margin: 'auto', textAlign: 'center', marginBlock: -1, position: 'relative', zIndex: 99, background: '#1d1923', pb: 12, paddingTop: '40vh' }}>
+        <Box id='services' sx={{ paddingInline:{xs: 2, md: 12 }, margin: 'auto', textAlign: 'center', marginBlock: -1, position: 'relative', zIndex: 99, background: '#1d1923', pb: 12, paddingTop: '40vh' }}>
             <Stack sx={{ flexDirection: 'row', alignItems: 'center', gap: 2, marginBottom: 4}}>
                 <Typography sx={{ fontSize: {xs:'28px', md: '46px'}, fontWeight: '600', width: {xs:'100%', md:'800px'} }}>Nuestros Servicios</Typography>
                 <DividerStyled />

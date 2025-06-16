@@ -109,7 +109,7 @@ const RentsDJProductionSection = () => {
                                                 type: 'spring',
                                             }}
                                         >
-                                            <RentsDJProductionComponent src={"/offonon/dj.png"} title={'CURSOS'} />
+                                            <RentsDJProductionComponent link={'/home#courses'} src={"/offonon/dj.png"} title={'CURSOS'} />
                                         </motion.div>
                                     </Grid2>
                                     <Grid2 size={{ xs: 12, md: 4 }} sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -124,7 +124,7 @@ const RentsDJProductionSection = () => {
                                                 type: 'spring',
                                             }}
                                         >
-                                            <RentsDJProductionComponent src={"/offonon/produccion.png"} title={'SERVICIOS'} />
+                                            <RentsDJProductionComponent link={'/home#services'} src={"/offonon/produccion.png"} title={'SERVICIOS'} />
                                         </motion.div>
 
                                     </Grid2>
@@ -139,7 +139,7 @@ const RentsDJProductionSection = () => {
                                                 type: 'spring',
                                             }}
                                         >
-                                            <RentsDJProductionComponent src={"/offonon/rentas.png"} title={'RENTA PARA TU EVENTO'} />
+                                            <RentsDJProductionComponent link={'/home#courses'} src={"/offonon/rentas.png"} title={'RENTA PARA TU EVENTO'} />
                                         </motion.div>
 
                                     </Grid2>

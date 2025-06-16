@@ -14,15 +14,21 @@ const ImagesComponent = styled("img")(({theme}) => ({
 }));
 
 
-const RentsDJProductionComponent = ({src,title}: {src: string, title: string}) => {
+const RentsDJProductionComponent = ({src,title, link}: {src: string, title: string, link: string}) => {
 
     return (
         <>
         <Box 
+            href={link}
+            component='a'
             className='ImageRentsDJProductionComponent' 
             sx={{
                 position: 'relative', 
                 cursor: 'pointer', 
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                color: 'white'
             }}>
             <ImagesComponent
                 src={src}
@@ -51,7 +57,8 @@ const RentsDJProductionComponent = ({src,title}: {src: string, title: string}) =
                 fontWeight: 'bold',
                 left: '0px',
                 right: '0px',
-                top: '32%',
+                marginTop: '-12px',
+                // top: '32%',
                 // bottom: 0,
                 // transform: 'translateY(50%)',
                 textShadow: '2px 2px 0px black',

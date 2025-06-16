@@ -12,7 +12,7 @@ const ServiceDetail = ({data} : {data: ServiceI}) => {
             <Typography sx={{fontSize: '20px', fontWeight: 'bold'}}  my={2}>{data.title_structure}</Typography>
             {data.structure?.map((ele, key) => (
                 <Typography component={'ul'} key={key} >
-                    <Typography component={'li'} mb={2}>{ele}</Typography>
+                    <Typography component={'li'} mb={2}>{ele}.</Typography>
                 </Typography>
 
             ))}
@@ -22,10 +22,11 @@ const ServiceDetail = ({data} : {data: ServiceI}) => {
                     <Typography key={key} my={2}>{ele}</Typography>
                 ))
             } */}
+            {/* {JSON.stringify(data.outro)} */}
             {data.outro && 
                 data.outro.map((ele,key) => (
                     
-                    <Typography py={0} key={key} my={1}>{ele}</Typography>
+                    <Typography py={0} key={key} my={1}>{ele}.</Typography>
                 ))
             }
         </Box>

@@ -15,22 +15,22 @@ export default class MyDocument extends Document {
                     <meta charSet="UTF-8"/>
 
                     <meta name="theme-color" content={theme.palette.primary.main}/>
-                    <meta property="title" content="Pierre | Centro Profesional"/>
-                    <meta property="og:title" content="Pierre | Centro Profesional"/>
-                    <meta property="og:url" content="https://pierre.com"/>
-                    <meta property="og:site_name" content="Pierre | Centro Profesional"/>
+                    <meta property="title" content="OFFONON Studio | Electronic Music Studio"/>
+                    <meta property="og:title" content="OFFONON Studio | Electronic Music Studio"/>
+                    <meta property="og:url" content="https://offononstudio.com"/>
+                    <meta property="og:site_name" content="OFFONON Studio | Electronic Music Studio"/>
                     <meta property="og:locale" content="es"/>
                     <meta property="og:locale:alternate" content="es_AR"/>
-                    <meta name='author' content='Pierre'  />
-                    <meta name="keywords" content="Centro Profesional" 
+                    <meta name='author' content='OFFONON Studio'  />
+                    <meta name="keywords" content="Electronic Music Studio" 
                     />
                     <meta name="description" property="og:description"
-                          content="Pierre | Centro Profesional"/>
+                          content="OFFONON Studio | Electronic Music Studio"/>
                     <meta property="og:image" content="/favicon_io/favicon.png"/>
 
                     <meta
                         property="og:description"
-                        content="Centro Profesional"
+                        content="Electronic Music Studio"
                         />
                     <meta
                         property="og:image"

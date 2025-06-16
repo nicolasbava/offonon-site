@@ -19,7 +19,12 @@ const CourseDetail = ({data} : {data: Course}) => {
                     </Typography>
                 ))} 
             </Typography>
-
+            <Typography mt={2} sx={{fontSize: '18px'}}>{data.outro}</Typography>
+            {/* {data.outro && 
+                data.outro.map((ele,key) => (
+                    <Typography py={0} key={key} my={1}>{ele}</Typography>
+                ))
+            } */}
         </Box>
     )
 };
