@@ -61,7 +61,7 @@ const MixMasterForm = () => {
         </Box>
 
         <Box sx={{background: '#1d1923', position: 'relative', zIndex: 99, py: '20vh'}}>
-            <Box sx={{maxWidth: {xs: '100%', md: '40%'}, margin: 'auto', pt: 4, }} id='contact-form'>
+            <Box sx={{maxWidth: {xs: '100%', md: '40%'}, margin: 'auto', pt: 4, px: {xs:4, md: 0    } }} id='contact-form'>
 
                 <MixMasterContactForm submitAction={sendContactMail}  />
             </Box>
