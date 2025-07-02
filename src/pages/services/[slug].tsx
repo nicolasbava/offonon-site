@@ -4,6 +4,9 @@ import Layout from "@/components/Layout";
 import ServiceInformation from "@/components/Services/Services";
 import { ServiceI } from "@/types/services";
 import { useRouter } from "next/router";
+import { Box } from "@mui/material";
+import HeroImageServices from "@/components/Services/HeroImage";
+import MixMasterForm from "@/components/Services/Mix&Master/MixMasterForm";
 
  
 const servicesData : ServiceI[] = [
@@ -73,15 +76,7 @@ const servicesData : ServiceI[] = [
                 ]
 
             },
-            {
-                title: 'Mastering',
-                description: [
-                    {
-                        price: '$700 MX',
-                        stems: 'Stereo Mastering',
-                    },
-                ]
-            },
+
             {
                 title: 'Mixdown & Mastering',
                 description: [
@@ -102,7 +97,16 @@ const servicesData : ServiceI[] = [
                         stems: '+ than 45 stems',
                     },
                 ]
-            }
+            },
+            {
+                title: 'Mastering',
+                description: [
+                    {
+                        price: '$700 MX',
+                        stems: 'Stereo Mastering',
+                    },
+                ]
+            },
         ]
     }
 ]
@@ -114,7 +118,7 @@ const Services = () => {
     if (typeof slug !== 'string') {
         return (
         <Layout>
-            <HeroImageCourses name={'cursos'} />
+            <HeroImageServices name={'Servicios'} />
             <div className="py-12 text-center text-lg">Cargando curso...</div>
         </Layout>
         );
@@ -128,7 +132,7 @@ const Services = () => {
     if (!service) {
         return (
         <Layout>
-            <HeroImageCourses name={'Servicios'} />
+            <HeroImageServices name={'Servicios'} />
             <div className="py-12 text-center text-lg text-red-500">
             El curso que estás buscando no fue encontrado.
             </div>
@@ -138,13 +142,18 @@ const Services = () => {
 
 
     return (
+        <>
         <Layout>
-            <HeroImageCourses name={service.title} />
+            <HeroImageServices name={service.title} />
             {service ? 
                 <ServiceInformation data={service}  />
-            : 'NO ENCONTRO SERVICIO' }
+                : 'NO ENCONTRO SERVICIO' }
 
+            {service && service.link === 'mix-master' && (
+                <MixMasterForm />
+            )}
         </Layout>
+        </>
     )
 };
 

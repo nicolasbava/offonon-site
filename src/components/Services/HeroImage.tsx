@@ -26,8 +26,8 @@ const HeroImageServices = ({name} : {name: string}) => {
                 <Typography  sx={{
                     textTransform: 'uppercase',
                     fontWeight: 'bold',
-                    fontSize: {xs:'22px',md:'64px'},
-                    width: {xs:'auto', md: '43%'},
+                    fontSize: {xs:'30px', md:'64px'},
+                    width: {xs:'80%', md: '43%'},
                     textShadow: '8px 8px 0px black',
                     textAlign:{xs: 'center', md: 'left'}
                 }} >{name}</Typography>
@@ -38,6 +38,7 @@ const HeroImageServices = ({name} : {name: string}) => {
                     sx={{
                         height: "auto",
                         width: { xs: "150px", md: "550px" },
+                        mt: { xs: 2, md: 0 }, 
                         // display: { xs: "none", md: "block" },
                     }}
                 />

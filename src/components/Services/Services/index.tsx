@@ -10,9 +10,9 @@ const ServiceInformation = ({data} : {data: ServiceI}) => {
     return (
         <Box
             sx={{
-                minHeight: '170vh',
+                minHeight: '100vh',
                 background: '#1d1923',
-                paddingBottom: '30vh',
+                // paddingBottom: '10vh',
                 position: 'relative',
                 zIndex: 10
             }}
@@ -22,7 +22,7 @@ const ServiceInformation = ({data} : {data: ServiceI}) => {
                 maxWidth: {xs: '90%',  lg: '70%'},
                 margin: 'auto',
                 paddingTop: {xs:12, md:12},
-                marginBottom: 8,
+                paddingBottom: 16,
             }}>
                 <Grid2 
                     size={{ xs: 12, md: 12 }}
@@ -36,12 +36,12 @@ const ServiceInformation = ({data} : {data: ServiceI}) => {
                     <ServiceDetail data={data} />
                 </Grid2>
 
-                <Grid2 
+                {/* <Grid2 
                     size={{ xs: 12, md: 12 }}
                     mt={4}
                 >
                     <Button variant='contained'>¡QUIERO INSCRIBIRME!</Button>
-                </Grid2>
+                </Grid2> */}
             </Grid2>
         </Box>
     )

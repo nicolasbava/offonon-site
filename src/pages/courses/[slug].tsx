@@ -19,7 +19,7 @@ const coursesData : Course[] = [
         ],
         outro: 'Al finalizar el curso, el estudiante será capaz de desarrollar composiciones originales, diseñar sus propios sonidos, y ejecutar una producción profesional desde cero, consolidando así una base técnica y creativa robusta para su carrera musical.'
     },
-        {
+    {
         link: 'dj',
         name: 'Curso de Dj',
         intro: 'Objetivos Generales del Curso Integral de DJ (Vinilos, Rekordbox + Timecode, CDJ 3000)',

@@ -43,14 +43,14 @@ const HomeServices = () => {
             </Stack>
             <Grid2 container direction='row' rowGap={4} >
                     <Grid2 size={{ xs: 12, md: 6 }}>
-                    {infoServices.slice(0, Math.round(infoServices.length / 2 )).map(ele => (
-                        <ServicesList key={ele.title}  name={ele.title} link={ele.link} />
-                    ))}
+                        {infoServices.slice(0, Math.round(infoServices.length / 2 )).map(ele => (
+                            <ServicesList key={ele.title}  name={ele.title} link={ele.link} />
+                        ))}
                     </Grid2>
-                     <Grid2 size={{ xs: 12, md: 6 }} >
-                    {infoServices.slice(Math.round(infoServices.length / 2 )).map(ele => (
-                        <ServicesList key={ele.title}  name={ele.title} link={ele.link} />
-                    ))}
+                    <Grid2 size={{ xs: 12, md: 6 }} >
+                        {infoServices.slice(Math.round(infoServices.length / 2 )).map(ele => (
+                            <ServicesList key={ele.title}  name={ele.title} link={ele.link} />
+                        ))}
                     </Grid2>
             </Grid2>
 

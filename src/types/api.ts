@@ -5,8 +5,8 @@ export type ApiVoidResponse = {
 
 export type ApiMailUp = {
     subject: string
-    body: string
-    attachments: File
+    html: string
+    // attachments: File
 }
 
 export type ApiNewsletterUp = {

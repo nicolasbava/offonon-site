@@ -1,5 +1,6 @@
 import { ServiceI } from "@/types/services";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Grid2, Typography } from "@mui/material";
+import MixMasterMolecule from "../Mix&Master";
 
 
 const ServiceDetail = ({data} : {data: ServiceI}) => {
@@ -14,18 +15,14 @@ const ServiceDetail = ({data} : {data: ServiceI}) => {
                 <Typography component={'ul'} key={key} >
                     <Typography component={'li'} mb={2}>{ele}.</Typography>
                 </Typography>
-
             ))}
 
-            {/* {data.sub_service && 
-                data.sub_service.map((ele, key) => (
-                    <Typography key={key} my={2}>{ele}</Typography>
-                ))
-            } */}
-            {/* {JSON.stringify(data.outro)} */}
+            {data.sub_service &&
+                <MixMasterMolecule sub_service={data.sub_service} />
+            }
+
             {data.outro && 
                 data.outro.map((ele,key) => (
-                    
                     <Typography py={0} key={key} my={1}>{ele}.</Typography>
                 ))
             }
@@ -34,3 +31,13 @@ const ServiceDetail = ({data} : {data: ServiceI}) => {
 };
 
 export default ServiceDetail;
+
+
+
+// si tiene algun trabajo para mostrar, que lo suba a soundcloud en privado y nos deja el link por aca
+// (input de texto que reciba un link de soundcloud) para clases
+
+// yuls encarcado del area de multimedia en teachers
+// y agregar a vampy tambien
+
+// agregar descripcion a los artistas que forman parte y lo que hacen

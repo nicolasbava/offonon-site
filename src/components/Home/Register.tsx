@@ -12,7 +12,6 @@ const RegisterSection = () => {
     const [text, setText] = useState('');
 
     const handleSubmit = () => {
-        console.log('Submitted:', text);
         // You can add more logic here
     };
     return (
