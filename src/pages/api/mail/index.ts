@@ -21,8 +21,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
 
     await transporter.sendMail({
-      from: 'nicobava96@gmail.com',
-      to: 'nicolasbava96@gmail.com', //cambiar por email process.env.NEXT_PUBLIC_EMAIL
+      from: process.env.NEXT_PUBLIC_EMAIL,
+      to: process.env.NEXT_PUBLIC_EMAIL, //cambiar por email process.env.NEXT_PUBLIC_EMAIL
       subject: subject,
       html: html
     });

@@ -34,7 +34,7 @@ const useMail = (): UseMailHook => {
       }
 
       const mailMsg: ApiMailUp = {
-        subject: `[${data.name}] NUEVO MENSAJE - MezclaMasterForm!`,
+        subject: `Formulario de Mezcla y Master`,
         html: message.html,
       };
 
