@@ -60,14 +60,14 @@ export default function HomePage() {
           </Grid2>
 
           {/* Calendly Embed */}
-          <Grid2 size={{xs: 10}} sx={{justifyContent: 'flex-start'}}>
+          {/* <Grid2 size={{xs: 10}} sx={{justifyContent: 'flex-start'}}>
             <div
               className="calendly-inline-widget"
               data-url="https://calendly.com/nicobava96/agenda-aqui"
               style={{ minWidth: "320px", height: "800px" }}
             ></div>
-          </Grid2>
-        </Grid2>
+          </Grid2>*/}
+        </Grid2> 
       </StyledTitleContainer>
 
     </Box>
